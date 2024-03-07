@@ -1,0 +1,401 @@
+group,item,plural,classification,frequency_rank,recipient_id,sent_construct,sentence
+A,101,FALSE,alternating,1,longIndefinite,DOsentence,Bob took a man wearing a hat a gift
+B,101,FALSE,alternating,1,longIndefinite,PDsentence,Bob took a gift to a man wearing a hat
+C,101,FALSE,alternating,1,shortIndefinite,DOsentence,Juan took a woman a gift
+D,101,FALSE,alternating,1,shortIndefinite,PDsentence,Juan took a gift to a woman
+E,103,FALSE,alternating,3,longIndefinite,DOsentence,Michael gave a man wearing a hat a message
+F,103,FALSE,alternating,3,longIndefinite,PDsentence,Michael gave a message to a man wearing a hat
+G,103,FALSE,alternating,3,shortIndefinite,DOsentence,Bob gave a woman a message
+H,103,FALSE,alternating,3,shortIndefinite,PDsentence,Bob gave a message to a woman
+B,105,FALSE,alternating,5,longIndefinite,DOsentence,Linda showed a man who was from work a picture
+A,105,FALSE,alternating,5,longIndefinite,PDsentence,Linda showed a picture to a man who was from work
+D,105,FALSE,alternating,5,shortIndefinite,DOsentence,Juan showed a woman a picture
+C,105,FALSE,alternating,5,shortIndefinite,PDsentence,Juan showed a picture to a woman
+F,107,FALSE,alternating,7,longIndefinite,DOsentence,Maria brought a woman who was wearing a hat a blanket
+E,107,FALSE,alternating,7,longIndefinite,PDsentence,Maria brought a blanket to a woman who was wearing a hat
+H,107,FALSE,alternating,7,shortIndefinite,DOsentence,Juan brought a woman a blanket
+G,107,FALSE,alternating,7,shortIndefinite,PDsentence,Juan brought a blanket to a woman
+C,109,FALSE,alternating,9,longIndefinite,DOsentence,John paid a man wearing a hat a compliment
+D,109,FALSE,alternating,9,longIndefinite,PDsentence,John paid a compliment to a man wearing a hat
+A,109,FALSE,alternating,9,shortIndefinite,DOsentence,Mary paid a woman a compliment
+B,109,FALSE,alternating,9,shortIndefinite,PDsentence,Mary paid a compliment to a woman
+G,111,FALSE,alternating,11,longIndefinite,DOsentence,Maria offered a man from work a payment
+H,111,FALSE,alternating,11,longIndefinite,PDsentence,Maria offered a payment to a man from work
+E,111,FALSE,alternating,11,shortIndefinite,DOsentence,Alice offered a woman a payment
+F,111,FALSE,alternating,11,shortIndefinite,PDsentence,Alice offered a payment to a woman
+D,113,FALSE,alternating,13,longIndefinite,DOsentence,Linda sold a woman who was from work some coffee
+C,113,FALSE,alternating,13,longIndefinite,PDsentence,Linda sold some coffee to a woman who was from work
+B,113,FALSE,alternating,13,shortIndefinite,DOsentence,Alice sold a man some coffee
+A,113,FALSE,alternating,13,shortIndefinite,PDsentence,Alice sold some coffee to a man
+H,115,FALSE,alternating,15,longIndefinite,DOsentence,Michael hit a woman wearing a hat a curveball
+G,115,FALSE,alternating,15,longIndefinite,PDsentence,Michael hit a curveball to a woman wearing a hat
+F,115,FALSE,alternating,15,shortIndefinite,DOsentence,Bob hit a woman a curveball
+E,115,FALSE,alternating,15,shortIndefinite,PDsentence,Bob hit a curveball to a woman
+A,117,FALSE,alternating,17,longIndefinite,DOsentence,Mary taught a woman wearing a hat a concept
+B,117,FALSE,alternating,17,longIndefinite,PDsentence,Mary taught a concept to a woman wearing a hat
+C,117,FALSE,alternating,17,shortIndefinite,DOsentence,Maria taught a woman a concept
+D,117,FALSE,alternating,17,shortIndefinite,PDsentence,Maria taught a concept to a woman
+E,119,FALSE,alternating,19,longIndefinite,DOsentence,Juan threw a woman wearing a hat a soda
+F,119,FALSE,alternating,19,longIndefinite,PDsentence,Juan threw a soda to a woman wearing a hat
+G,119,FALSE,alternating,19,shortIndefinite,DOsentence,John threw a woman a soda
+H,119,FALSE,alternating,19,shortIndefinite,PDsentence,John threw a soda to a woman
+B,121,FALSE,alternating,21,longIndefinite,DOsentence,Linda pushed a woman who was from work a plate
+A,121,FALSE,alternating,21,longIndefinite,PDsentence,Linda pushed a plate to a woman who was from work
+D,121,FALSE,alternating,21,shortIndefinite,DOsentence,John pushed a woman a plate
+C,121,FALSE,alternating,21,shortIndefinite,PDsentence,John pushed a plate to a woman
+F,123,TRUE,alternating,23,longIndefinite,DOsentence,Linda flew a team from work some weapons
+E,123,TRUE,alternating,23,longIndefinite,PDsentence,Linda flew some weapons to a team from work
+H,123,TRUE,alternating,23,shortIndefinite,DOsentence,Bob flew a team some weapons
+G,123,TRUE,alternating,23,shortIndefinite,PDsentence,Bob flew some weapons to a team
+C,125,FALSE,alternating,25,longIndefinite,DOsentence,Bob promised a woman who was wearing a hat a chance
+D,125,FALSE,alternating,25,longIndefinite,PDsentence,Bob promised a chance to a woman who was wearing a hat
+A,125,FALSE,alternating,25,shortIndefinite,DOsentence,Michael promised a man a chance
+B,125,FALSE,alternating,25,shortIndefinite,PDsentence,Michael promised a chance to a man
+G,127,FALSE,alternating,27,longIndefinite,DOsentence,John kicked a woman who was from work a football
+H,127,FALSE,alternating,27,longIndefinite,PDsentence,John kicked a football to a woman who was from work
+E,127,FALSE,alternating,27,shortIndefinite,DOsentence,Michael kicked a woman a football
+F,127,FALSE,alternating,27,shortIndefinite,PDsentence,Michael kicked a football to a woman
+D,129,FALSE,alternating,29,longIndefinite,DOsentence,Alice granted a woman wearing a hat another chance
+C,129,FALSE,alternating,29,longIndefinite,PDsentence,Alice granted another chance to a woman wearing a hat
+B,129,FALSE,alternating,29,shortIndefinite,DOsentence,Linda granted a man another chance
+A,129,FALSE,alternating,29,shortIndefinite,PDsentence,Linda granted another chance to a man
+H,131,FALSE,alternating,31,longIndefinite,DOsentence,Michael slipped a man from work a pill
+G,131,FALSE,alternating,31,longIndefinite,PDsentence,Michael slipped a pill to a man from work
+F,131,FALSE,alternating,31,shortIndefinite,DOsentence,John slipped a woman a pill
+E,131,FALSE,alternating,31,shortIndefinite,PDsentence,John slipped a pill to a woman
+A,133,FALSE,alternating,33,longIndefinite,DOsentence,John quoted a man wearing a hat a sentence
+B,133,FALSE,alternating,33,longIndefinite,PDsentence,John quoted a sentence to a man wearing a hat
+C,133,FALSE,alternating,33,shortIndefinite,DOsentence,Michael quoted a woman a sentence
+D,133,FALSE,alternating,33,shortIndefinite,PDsentence,Michael quoted a sentence to a woman
+E,135,FALSE,alternating,35,longIndefinite,DOsentence,Linda owed a woman wearing a hat a job
+F,135,FALSE,alternating,35,longIndefinite,PDsentence,Linda owed a job to a woman wearing a hat
+G,135,FALSE,alternating,35,shortIndefinite,DOsentence,Bob owed a woman a job
+H,135,FALSE,alternating,35,shortIndefinite,PDsentence,Bob owed a job to a woman
+B,137,FALSE,alternating,37,longIndefinite,DOsentence,Mary slid a man from work a note
+A,137,FALSE,alternating,37,longIndefinite,PDsentence,Mary slid a note to a man from work
+D,137,FALSE,alternating,37,shortIndefinite,DOsentence,Linda slid a woman a note
+C,137,FALSE,alternating,37,shortIndefinite,PDsentence,Linda slid a note to a woman
+F,139,FALSE,alternating,39,longIndefinite,DOsentence,Mary assigned a woman who was from work a desk
+E,139,FALSE,alternating,39,longIndefinite,PDsentence,Mary assigned a desk to a woman who was from work
+H,139,FALSE,alternating,39,shortIndefinite,DOsentence,Michael assigned a woman a desk
+G,139,FALSE,alternating,39,shortIndefinite,PDsentence,Michael assigned a desk to a woman
+C,141,FALSE,alternating,41,longIndefinite,DOsentence,Alice guaranteed a man wearing a hat a spot
+D,141,FALSE,alternating,41,longIndefinite,PDsentence,Alice guaranteed a spot to a man wearing a hat
+A,141,FALSE,alternating,41,shortIndefinite,DOsentence,John guaranteed a man a spot
+B,141,FALSE,alternating,41,shortIndefinite,PDsentence,John guaranteed a spot to a man
+G,143,FALSE,alternating,43,longIndefinite,DOsentence,John floated a woman who was wearing a hat a bottle
+H,143,FALSE,alternating,43,longIndefinite,PDsentence,John floated a bottle to a woman who was wearing a hat
+E,143,FALSE,alternating,43,shortIndefinite,DOsentence,Michael floated a woman a bottle
+F,143,FALSE,alternating,43,shortIndefinite,PDsentence,Michael floated a bottle to a woman
+D,145,FALSE,alternating,45,longIndefinite,DOsentence,Maria pitched a woman who was from work a proposal
+C,145,FALSE,alternating,45,longIndefinite,PDsentence,Maria pitched a proposal to a woman who was from work
+B,145,FALSE,alternating,45,shortIndefinite,DOsentence,Bob pitched a man a proposal
+A,145,FALSE,alternating,45,shortIndefinite,PDsentence,Bob pitched a proposal to a man
+H,147,FALSE,alternating,47,longIndefinite,DOsentence,Michael shipped a man who was wearing a hat a box
+G,147,FALSE,alternating,47,longIndefinite,PDsentence,Michael shipped a box to a man who was wearing a hat
+F,147,FALSE,alternating,47,shortIndefinite,DOsentence,Michael shipped a man a box
+E,147,FALSE,alternating,47,shortIndefinite,PDsentence,Michael shipped a box to a man
+A,149,FALSE,alternating,49,longIndefinite,DOsentence,John slammed a woman who was from work a fastball
+B,149,FALSE,alternating,49,longIndefinite,PDsentence,John slammed a fastball to a woman who was from work
+C,149,FALSE,alternating,49,shortIndefinite,DOsentence,Bob slammed a woman a fastball
+D,149,FALSE,alternating,49,shortIndefinite,PDsentence,Bob slammed a fastball to a woman
+E,151,FALSE,alternating,51,longIndefinite,DOsentence,Alice signaled a woman from work a formation
+F,151,FALSE,alternating,51,longIndefinite,PDsentence,Alice signaled a formation to a woman from work
+G,151,FALSE,alternating,51,shortIndefinite,DOsentence,Bob signaled a woman a formation
+H,151,FALSE,alternating,51,shortIndefinite,PDsentence,Bob signaled a formation to a woman
+B,153,FALSE,alternating,53,longIndefinite,DOsentence,Bob snuck a woman who was from work a cookie
+A,153,FALSE,alternating,53,longIndefinite,PDsentence,Bob snuck a cookie to a woman who was from work
+D,153,FALSE,alternating,53,shortIndefinite,DOsentence,Linda snuck a woman a cookie
+C,153,FALSE,alternating,53,shortIndefinite,PDsentence,Linda snuck a cookie to a woman
+F,155,FALSE,alternating,55,longIndefinite,DOsentence,Linda shoved a man who was from work a letter
+E,155,FALSE,alternating,55,longIndefinite,PDsentence,Linda shoved a letter to a man who was from work
+H,155,FALSE,alternating,55,shortIndefinite,DOsentence,John shoved a woman a letter
+G,155,FALSE,alternating,55,shortIndefinite,PDsentence,John shoved a letter to a woman
+C,157,FALSE,alternating,57,longIndefinite,DOsentence,Mary hauled a man who was wearing a hat a shipment
+D,157,FALSE,alternating,57,longIndefinite,PDsentence,Mary hauled a shipment to a man who was wearing a hat
+A,157,FALSE,alternating,57,shortIndefinite,DOsentence,Alice hauled a man a shipment
+B,157,FALSE,alternating,57,shortIndefinite,PDsentence,Alice hauled a shipment to a man
+G,159,FALSE,alternating,59,longIndefinite,DOsentence,Bob willed a woman who was from work a painting
+H,159,FALSE,alternating,59,longIndefinite,PDsentence,Bob willed a painting to a woman who was from work
+E,159,FALSE,alternating,59,shortIndefinite,DOsentence,John willed a man a painting
+F,159,FALSE,alternating,59,shortIndefinite,PDsentence,John willed a painting to a man
+D,161,FALSE,alternating,61,longIndefinite,DOsentence,Mary mailed a woman from work a note
+C,161,FALSE,alternating,61,longIndefinite,PDsentence,Mary mailed a note to a woman from work
+B,161,FALSE,alternating,61,shortIndefinite,DOsentence,Alice mailed a man a note
+A,161,FALSE,alternating,61,shortIndefinite,PDsentence,Alice mailed a note to a man
+H,163,FALSE,alternating,63,longIndefinite,DOsentence,Maria phoned a man who was from work a request
+G,163,FALSE,alternating,63,longIndefinite,PDsentence,Maria phoned a request to a man who was from work
+F,163,FALSE,alternating,63,shortIndefinite,DOsentence,Maria phoned a woman a request
+E,163,FALSE,alternating,63,shortIndefinite,PDsentence,Maria phoned a request to a woman
+A,165,FALSE,alternating,65,longIndefinite,DOsentence,John flung a woman wearing a hat an apple
+B,165,FALSE,alternating,65,longIndefinite,PDsentence,John flung an apple to a woman wearing a hat
+C,165,FALSE,alternating,65,shortIndefinite,DOsentence,Linda flung a man an apple
+D,165,FALSE,alternating,65,shortIndefinite,PDsentence,Linda flung an apple to a man
+E,167,FALSE,alternating,67,longIndefinite,DOsentence,Alice chucked a woman who was wearing a hat a bag
+F,167,FALSE,alternating,67,longIndefinite,PDsentence,Alice chucked a bag to a woman who was wearing a hat
+G,167,FALSE,alternating,67,shortIndefinite,DOsentence,Juan chucked a woman a bag
+H,167,FALSE,alternating,67,shortIndefinite,PDsentence,Juan chucked a bag to a woman
+B,169,FALSE,alternating,69,longIndefinite,DOsentence,John repaid a woman from work some money
+A,169,FALSE,alternating,69,longIndefinite,PDsentence,John repaid some money to a woman from work
+D,169,FALSE,alternating,69,shortIndefinite,DOsentence,Maria repaid a woman some money
+C,169,FALSE,alternating,69,shortIndefinite,PDsentence,Maria repaid some money to a woman
+F,171,FALSE,alternating,71,longIndefinite,DOsentence,Alice wheeled a man wearing a hat some fruit
+E,171,FALSE,alternating,71,longIndefinite,PDsentence,Alice wheeled some fruit to a man wearing a hat
+H,171,FALSE,alternating,71,shortIndefinite,DOsentence,Mary wheeled a man some fruit
+G,171,FALSE,alternating,71,shortIndefinite,PDsentence,Mary wheeled some fruit to a man
+C,173,FALSE,alternating,73,longIndefinite,DOsentence,John hurled a woman from work a ball
+D,173,FALSE,alternating,73,longIndefinite,PDsentence,John hurled a ball to a woman from work
+A,173,FALSE,alternating,73,shortIndefinite,DOsentence,Linda hurled a man a ball
+B,173,FALSE,alternating,73,shortIndefinite,PDsentence,Linda hurled a ball to a man
+G,175,FALSE,alternating,75,longIndefinite,DOsentence,Bob faxed a woman who was from work a form
+H,175,FALSE,alternating,75,longIndefinite,PDsentence,Bob faxed a form to a woman who was from work
+E,175,FALSE,alternating,75,shortIndefinite,DOsentence,John faxed a woman a form
+F,175,FALSE,alternating,75,shortIndefinite,PDsentence,John faxed a form to a woman
+D,177,FALSE,alternating,77,longIndefinite,DOsentence,Michael telephoned a man from work some news
+C,177,FALSE,alternating,77,longIndefinite,PDsentence,Michael telephoned some news to a man from work
+B,177,FALSE,alternating,77,shortIndefinite,DOsentence,Maria telephoned a man some news
+A,177,FALSE,alternating,77,shortIndefinite,PDsentence,Maria telephoned some news to a man
+H,179,FALSE,alternating,79,longIndefinite,DOsentence,John heaved a man who was wearing a hat a ball
+G,179,FALSE,alternating,79,longIndefinite,PDsentence,John heaved a ball to a man who was wearing a hat
+F,179,FALSE,alternating,79,shortIndefinite,DOsentence,Mary heaved a man a ball
+E,179,FALSE,alternating,79,shortIndefinite,PDsentence,Mary heaved a ball to a man
+A,181,FALSE,alternating,81,longIndefinite,DOsentence,Mary slung a man who was wearing a hat a glance
+B,181,FALSE,alternating,81,longIndefinite,PDsentence,Mary slung a glance to a man who was wearing a hat
+C,181,FALSE,alternating,81,shortIndefinite,DOsentence,Bob slung a man a glance
+D,181,FALSE,alternating,81,shortIndefinite,PDsentence,Bob slung a glance to a man
+E,183,FALSE,alternating,83,longIndefinite,DOsentence,Linda loaned a man from work some equipment
+F,183,FALSE,alternating,83,longIndefinite,PDsentence,Linda loaned some equipment to a man from work
+G,183,FALSE,alternating,83,shortIndefinite,DOsentence,John loaned a man some equipment
+H,183,FALSE,alternating,83,shortIndefinite,PDsentence,John loaned some equipment to a man
+B,185,FALSE,alternating,85,longIndefinite,DOsentence,Alice ceded a woman wearing a hat a case
+A,185,FALSE,alternating,85,longIndefinite,PDsentence,Alice ceded a case to a woman wearing a hat
+D,185,FALSE,alternating,85,shortIndefinite,DOsentence,Michael ceded a man a case
+C,185,FALSE,alternating,85,shortIndefinite,PDsentence,Michael ceded a case to a man
+F,187,FALSE,alternating,87,longIndefinite,DOsentence,Mary lugged a woman from work some groceries
+E,187,FALSE,alternating,87,longIndefinite,PDsentence,Mary lugged some groceries to a woman from work
+H,187,FALSE,alternating,87,shortIndefinite,DOsentence,Mary lugged a woman some groceries
+G,187,FALSE,alternating,87,shortIndefinite,PDsentence,Mary lugged some groceries to a woman
+C,189,TRUE,alternating,89,longIndefinite,DOsentence,Linda bused a team from work some instruments
+D,189,TRUE,alternating,89,longIndefinite,PDsentence,Linda bused some instruments to a team from work
+A,189,TRUE,alternating,89,shortIndefinite,DOsentence,Mary bused a team some instruments
+B,189,TRUE,alternating,89,shortIndefinite,PDsentence,Mary bused some instruments to a team
+G,191,TRUE,alternating,91,longIndefinite,DOsentence,Bob carted a team from work some books
+H,191,TRUE,alternating,91,longIndefinite,PDsentence,Bob carted some books to a team from work
+E,191,TRUE,alternating,91,shortIndefinite,DOsentence,Maria carted a team some books
+F,191,TRUE,alternating,91,shortIndefinite,PDsentence,Maria carted some books to a team
+D,193,FALSE,alternating,93,longIndefinite,DOsentence,Maria punted a woman who was wearing a hat a ball
+C,193,FALSE,alternating,93,longIndefinite,PDsentence,Maria punted a ball to a woman who was wearing a hat
+B,193,FALSE,alternating,93,shortIndefinite,DOsentence,John punted a woman a ball
+A,193,FALSE,alternating,93,shortIndefinite,PDsentence,John punted a ball to a woman
+H,195,FALSE,alternating,95,longIndefinite,DOsentence,John bequeathed a man wearing a hat a portrait
+G,195,FALSE,alternating,95,longIndefinite,PDsentence,John bequeathed a portrait to a man wearing a hat
+F,195,FALSE,alternating,95,shortIndefinite,DOsentence,Linda bequeathed a man a portrait
+E,195,FALSE,alternating,95,shortIndefinite,PDsentence,Linda bequeathed a portrait to a man
+A,197,FALSE,alternating,97,longIndefinite,DOsentence,Alice cabled a man from work some directions
+B,197,FALSE,alternating,97,longIndefinite,PDsentence,Alice cabled some directions to a man from work
+C,197,FALSE,alternating,97,shortIndefinite,DOsentence,Bob cabled a man some directions
+D,197,FALSE,alternating,97,shortIndefinite,PDsentence,Bob cabled some directions to a man
+E,199,FALSE,alternating,99,longIndefinite,DOsentence,Michael catapulted a man who was wearing a hat a container
+F,199,FALSE,alternating,99,longIndefinite,PDsentence,Michael catapulted a container to a man who was wearing a hat
+G,199,FALSE,alternating,99,shortIndefinite,DOsentence,Alice catapulted a woman a container
+H,199,FALSE,alternating,99,shortIndefinite,PDsentence,Alice catapulted a container to a woman
+B,1,FALSE,non-alternating,1,longIndefinite,DOsentence,John said a woman from work a word
+A,1,FALSE,non-alternating,1,longIndefinite,PDsentence,John said a word to a woman from work
+D,1,FALSE,non-alternating,1,shortIndefinite,DOsentence,Michael said a man a word
+C,1,FALSE,non-alternating,1,shortIndefinite,PDsentence,Michael said a word to a man
+F,3,FALSE,non-alternating,3,longIndefinite,DOsentence,Michael reported a man who was from work some numbers
+E,3,FALSE,non-alternating,3,longIndefinite,PDsentence,Michael reported some numbers to a man who was from work
+H,3,FALSE,non-alternating,3,shortIndefinite,DOsentence,John reported a woman some numbers
+G,3,FALSE,non-alternating,3,shortIndefinite,PDsentence,John reported some numbers to a woman
+C,5,FALSE,non-alternating,5,longIndefinite,DOsentence,Alice raised a man from work a bucket
+D,5,FALSE,non-alternating,5,longIndefinite,PDsentence,Alice raised a bucket to a man from work
+A,5,FALSE,non-alternating,5,shortIndefinite,DOsentence,Maria raised a man a bucket
+B,5,FALSE,non-alternating,5,shortIndefinite,PDsentence,Maria raised a bucket to a man
+G,7,FALSE,non-alternating,7,longIndefinite,DOsentence,Mary described a man wearing a hat a headline
+H,7,FALSE,non-alternating,7,longIndefinite,PDsentence,Mary described a headline to a man wearing a hat
+E,7,FALSE,non-alternating,7,shortIndefinite,DOsentence,Alice described a woman a headline
+F,7,FALSE,non-alternating,7,shortIndefinite,PDsentence,Alice described a headline to a woman
+D,9,FALSE,non-alternating,9,longIndefinite,DOsentence,Mary stated a woman wearing a hat an idea
+C,9,FALSE,non-alternating,9,longIndefinite,PDsentence,Mary stated an idea to a woman wearing a hat
+B,9,FALSE,non-alternating,9,shortIndefinite,DOsentence,Bob stated a woman an idea
+A,9,FALSE,non-alternating,9,shortIndefinite,PDsentence,Bob stated an idea to a woman
+H,11,FALSE,non-alternating,11,longIndefinite,DOsentence,Juan presented a woman from work a painting
+G,11,FALSE,non-alternating,11,longIndefinite,PDsentence,Juan presented a painting to a woman from work
+F,11,FALSE,non-alternating,11,shortIndefinite,DOsentence,Alice presented a man a painting
+E,11,FALSE,non-alternating,11,shortIndefinite,PDsentence,Alice presented a painting to a man
+A,13,FALSE,non-alternating,13,longIndefinite,DOsentence,Bob addressed a man wearing a hat a message
+B,13,FALSE,non-alternating,13,longIndefinite,PDsentence,Bob addressed a message to a man wearing a hat
+C,13,FALSE,non-alternating,13,shortIndefinite,DOsentence,Alice addressed a woman a message
+D,13,FALSE,non-alternating,13,shortIndefinite,PDsentence,Alice addressed a message to a woman
+E,15,FALSE,non-alternating,15,longIndefinite,DOsentence,Alice admitted a man who was wearing a hat a slip-up
+F,15,FALSE,non-alternating,15,longIndefinite,PDsentence,Alice admitted a slip-up to a man who was wearing a hat
+G,15,FALSE,non-alternating,15,shortIndefinite,DOsentence,Alice admitted a woman a slip-up
+H,15,FALSE,non-alternating,15,shortIndefinite,PDsentence,Alice admitted a slip-up to a woman
+B,17,FALSE,non-alternating,17,longIndefinite,DOsentence,Bob announced a woman who was from work some new results
+A,17,FALSE,non-alternating,17,longIndefinite,PDsentence,Bob announced some new results to a woman who was from work
+D,17,FALSE,non-alternating,17,shortIndefinite,DOsentence,Maria announced a man some new results
+C,17,FALSE,non-alternating,17,shortIndefinite,PDsentence,Maria announced some new results to a man
+F,19,FALSE,non-alternating,19,longIndefinite,DOsentence,Juan expressed a man who was wearing a hat a thought
+E,19,FALSE,non-alternating,19,longIndefinite,PDsentence,Juan expressed a thought to a man who was wearing a hat
+H,19,FALSE,non-alternating,19,shortIndefinite,DOsentence,Michael expressed a woman a thought
+G,19,FALSE,non-alternating,19,shortIndefinite,PDsentence,Michael expressed a thought to a woman
+C,21,FALSE,non-alternating,21,longIndefinite,DOsentence,Michael contributed a woman who was from work some food
+D,21,FALSE,non-alternating,21,longIndefinite,PDsentence,Michael contributed some food to a woman who was from work
+A,21,FALSE,non-alternating,21,shortIndefinite,DOsentence,Maria contributed a man some food
+B,21,FALSE,non-alternating,21,shortIndefinite,PDsentence,Maria contributed some food to a man
+G,23,FALSE,non-alternating,23,longIndefinite,DOsentence,Bob recommended a woman wearing a hat a band
+H,23,FALSE,non-alternating,23,longIndefinite,PDsentence,Bob recommended a band to a woman wearing a hat
+E,23,FALSE,non-alternating,23,shortIndefinite,DOsentence,Maria recommended a woman a band
+F,23,FALSE,non-alternating,23,shortIndefinite,PDsentence,Maria recommended a band to a woman
+D,25,FALSE,non-alternating,25,longIndefinite,DOsentence,Michael repeated a man wearing a hat some words
+C,25,FALSE,non-alternating,25,longIndefinite,PDsentence,Michael repeated some words to a man wearing a hat
+B,25,FALSE,non-alternating,25,shortIndefinite,DOsentence,Alice repeated a woman some words
+A,25,FALSE,non-alternating,25,shortIndefinite,PDsentence,Alice repeated some words to a woman
+H,27,FALSE,non-alternating,27,longIndefinite,DOsentence,John proposed a woman from work an idea
+G,27,FALSE,non-alternating,27,longIndefinite,PDsentence,John proposed an idea to a woman from work
+F,27,FALSE,non-alternating,27,shortIndefinite,DOsentence,Mary proposed a man an idea
+E,27,FALSE,non-alternating,27,shortIndefinite,PDsentence,Mary proposed an idea to a man
+A,29,FALSE,non-alternating,29,longIndefinite,DOsentence,Michael displayed a man wearing a hat a photograph
+B,29,FALSE,non-alternating,29,longIndefinite,PDsentence,Michael displayed a photograph to a man wearing a hat
+C,29,FALSE,non-alternating,29,shortIndefinite,DOsentence,Juan displayed a man a photograph
+D,29,FALSE,non-alternating,29,shortIndefinite,PDsentence,Juan displayed a photograph to a man
+E,31,FALSE,non-alternating,31,longIndefinite,DOsentence,Maria shouted a woman wearing a hat a name
+F,31,FALSE,non-alternating,31,longIndefinite,PDsentence,Maria shouted a name to a woman wearing a hat
+G,31,FALSE,non-alternating,31,shortIndefinite,DOsentence,Linda shouted a man a name
+H,31,FALSE,non-alternating,31,shortIndefinite,PDsentence,Linda shouted a name to a man
+B,33,FALSE,non-alternating,33,longIndefinite,DOsentence,John yelled a woman from work some directions
+A,33,FALSE,non-alternating,33,longIndefinite,PDsentence,John yelled some directions to a woman from work
+D,33,FALSE,non-alternating,33,shortIndefinite,DOsentence,Maria yelled a man some directions
+C,33,FALSE,non-alternating,33,shortIndefinite,PDsentence,Maria yelled some directions to a man
+F,35,FALSE,non-alternating,35,longIndefinite,DOsentence,Linda communicated a woman from work a point
+E,35,FALSE,non-alternating,35,longIndefinite,PDsentence,Linda communicated a point to a woman from work
+H,35,FALSE,non-alternating,35,shortIndefinite,DOsentence,Juan communicated a man a point
+G,35,FALSE,non-alternating,35,shortIndefinite,PDsentence,Juan communicated a point to a man
+C,37,FALSE,non-alternating,37,longIndefinite,DOsentence,John restored a woman who was wearing a hat some money
+D,37,FALSE,non-alternating,37,longIndefinite,PDsentence,John restored some money to a woman who was wearing a hat
+A,37,FALSE,non-alternating,37,shortIndefinite,DOsentence,Bob restored a man some money
+B,37,FALSE,non-alternating,37,shortIndefinite,PDsentence,Bob restored some money to a man
+G,39,FALSE,non-alternating,39,longIndefinite,DOsentence,John snapped a man who was wearing a hat a comment
+H,39,FALSE,non-alternating,39,longIndefinite,PDsentence,John snapped a comment to a man who was wearing a hat
+E,39,FALSE,non-alternating,39,shortIndefinite,DOsentence,Michael snapped a man a comment
+F,39,FALSE,non-alternating,39,shortIndefinite,PDsentence,Michael snapped a comment to a man
+D,41,TRUE,non-alternating,41,longIndefinite,DOsentence,John distributed a team from work some books
+C,41,TRUE,non-alternating,41,longIndefinite,PDsentence,John distributed some books to a team from work
+B,41,TRUE,non-alternating,41,shortIndefinite,DOsentence,Linda distributed a team some books
+A,41,TRUE,non-alternating,41,shortIndefinite,PDsentence,Linda distributed some books to a team
+H,43,TRUE,non-alternating,43,longIndefinite,DOsentence,Mary donated a team from work a painting
+G,43,TRUE,non-alternating,43,longIndefinite,PDsentence,Mary donated a painting to a team from work
+F,43,TRUE,non-alternating,43,shortIndefinite,DOsentence,Bob donated a team a painting
+E,43,TRUE,non-alternating,43,shortIndefinite,PDsentence,Bob donated a painting to a team
+A,45,FALSE,non-alternating,45,longIndefinite,DOsentence,Mary administered a woman who was wearing a hat an antidote
+B,45,FALSE,non-alternating,45,longIndefinite,PDsentence,Mary administered an antidote to a woman who was wearing a hat
+C,45,FALSE,non-alternating,45,shortIndefinite,DOsentence,Bob administered a woman an antidote
+D,45,FALSE,non-alternating,45,shortIndefinite,PDsentence,Bob administered an antidote to a woman
+E,47,FALSE,non-alternating,47,longIndefinite,DOsentence,Juan conveyed a man from work a thought
+F,47,FALSE,non-alternating,47,longIndefinite,PDsentence,Juan conveyed a thought to a man from work
+G,47,FALSE,non-alternating,47,shortIndefinite,DOsentence,Alice conveyed a man a thought
+H,47,FALSE,non-alternating,47,shortIndefinite,PDsentence,Alice conveyed a thought to a man
+B,49,FALSE,non-alternating,49,longIndefinite,DOsentence,Juan blabbed a man who was wearing a hat some information
+A,49,FALSE,non-alternating,49,longIndefinite,PDsentence,Juan blabbed some information to a man who was wearing a hat
+D,49,FALSE,non-alternating,49,shortIndefinite,DOsentence,Michael blabbed a woman some information
+C,49,FALSE,non-alternating,49,shortIndefinite,PDsentence,Michael blabbed some information to a woman
+F,51,FALSE,non-alternating,51,longIndefinite,DOsentence,Maria surrendered a woman wearing a hat some guns
+E,51,FALSE,non-alternating,51,longIndefinite,PDsentence,Maria surrendered some guns to a woman wearing a hat
+H,51,FALSE,non-alternating,51,shortIndefinite,DOsentence,John surrendered a woman some guns
+G,51,FALSE,non-alternating,51,shortIndefinite,PDsentence,John surrendered some guns to a woman
+C,53,FALSE,non-alternating,53,longIndefinite,DOsentence,Bob articulated a woman from work a rule
+D,53,FALSE,non-alternating,53,longIndefinite,PDsentence,Bob articulated a rule to a woman from work
+A,53,FALSE,non-alternating,53,shortIndefinite,DOsentence,Bob articulated a man a rule
+B,53,FALSE,non-alternating,53,shortIndefinite,PDsentence,Bob articulated a rule to a man
+G,55,FALSE,non-alternating,55,longIndefinite,DOsentence,Linda groaned a man wearing a hat a reply
+H,55,FALSE,non-alternating,55,longIndefinite,PDsentence,Linda groaned a reply to a man wearing a hat
+E,55,FALSE,non-alternating,55,shortIndefinite,DOsentence,Alice groaned a man a reply
+F,55,FALSE,non-alternating,55,shortIndefinite,PDsentence,Alice groaned a reply to a man
+D,57,FALSE,non-alternating,57,longIndefinite,DOsentence,Michael roared a woman who was from work an order
+C,57,FALSE,non-alternating,57,longIndefinite,PDsentence,Michael roared an order to a woman who was from work
+B,57,FALSE,non-alternating,57,shortIndefinite,DOsentence,Mary roared a woman an order
+A,57,FALSE,non-alternating,57,shortIndefinite,PDsentence,Mary roared an order to a woman
+H,59,FALSE,non-alternating,59,longIndefinite,DOsentence,Maria recounted a woman from work some information
+G,59,FALSE,non-alternating,59,longIndefinite,PDsentence,Maria recounted some information to a woman from work
+F,59,FALSE,non-alternating,59,shortIndefinite,DOsentence,Michael recounted a man some information
+E,59,FALSE,non-alternating,59,shortIndefinite,PDsentence,Michael recounted some information to a man
+A,61,FALSE,non-alternating,61,longIndefinite,DOsentence,Mary denounced a man from work a law
+B,61,FALSE,non-alternating,61,longIndefinite,PDsentence,Mary denounced a law to a man from work
+C,61,FALSE,non-alternating,61,shortIndefinite,DOsentence,Mary denounced a man a law
+D,61,FALSE,non-alternating,61,shortIndefinite,PDsentence,Mary denounced a law to a man
+E,63,FALSE,non-alternating,63,longIndefinite,DOsentence,Alice murmured a woman from work a comment
+F,63,FALSE,non-alternating,63,longIndefinite,PDsentence,Alice murmured a comment to a woman from work
+G,63,FALSE,non-alternating,63,shortIndefinite,DOsentence,Mary murmured a woman a comment
+H,63,FALSE,non-alternating,63,shortIndefinite,PDsentence,Mary murmured a comment to a woman
+B,65,FALSE,non-alternating,65,longIndefinite,DOsentence,Michael moaned a man wearing a hat a plea
+A,65,FALSE,non-alternating,65,longIndefinite,PDsentence,Michael moaned a plea to a man wearing a hat
+D,65,FALSE,non-alternating,65,shortIndefinite,DOsentence,Michael moaned a man a plea
+C,65,FALSE,non-alternating,65,shortIndefinite,PDsentence,Michael moaned a plea to a man
+F,67,TRUE,non-alternating,67,longIndefinite,DOsentence,Alice dispatched a team from work some meals
+E,67,TRUE,non-alternating,67,longIndefinite,PDsentence,Alice dispatched some meals to a team from work
+H,67,TRUE,non-alternating,67,shortIndefinite,DOsentence,Linda dispatched a team some meals
+G,67,TRUE,non-alternating,67,shortIndefinite,PDsentence,Linda dispatched some meals to a team
+C,69,FALSE,non-alternating,69,longIndefinite,DOsentence,Maria mumbled a man from work some news
+D,69,FALSE,non-alternating,69,longIndefinite,PDsentence,Maria mumbled some news to a man from work
+A,69,FALSE,non-alternating,69,shortIndefinite,DOsentence,John mumbled a man some news
+B,69,FALSE,non-alternating,69,shortIndefinite,PDsentence,John mumbled some news to a man
+G,71,TRUE,non-alternating,71,longIndefinite,DOsentence,Mary furnished a team from work some forms
+H,71,TRUE,non-alternating,71,longIndefinite,PDsentence,Mary furnished some forms to a team from work
+E,71,TRUE,non-alternating,71,shortIndefinite,DOsentence,John furnished a team some forms
+F,71,TRUE,non-alternating,71,shortIndefinite,PDsentence,John furnished some forms to a team
+D,73,FALSE,non-alternating,73,longIndefinite,DOsentence,Alice howled a woman from work a complaint
+C,73,FALSE,non-alternating,73,longIndefinite,PDsentence,Alice howled a complaint to a woman from work
+B,73,FALSE,non-alternating,73,shortIndefinite,DOsentence,Michael howled a man a complaint
+A,73,FALSE,non-alternating,73,shortIndefinite,PDsentence,Michael howled a complaint to a man
+H,75,FALSE,non-alternating,75,longIndefinite,DOsentence,Maria grumbled a man who was from work a name
+G,75,FALSE,non-alternating,75,longIndefinite,PDsentence,Maria grumbled a name to a man who was from work
+F,75,FALSE,non-alternating,75,shortIndefinite,DOsentence,Juan grumbled a man a name
+E,75,FALSE,non-alternating,75,shortIndefinite,PDsentence,Juan grumbled a name to a man
+A,77,FALSE,non-alternating,77,longIndefinite,DOsentence,Juan narrated a woman who was from work a show
+B,77,FALSE,non-alternating,77,longIndefinite,PDsentence,Juan narrated a show to a woman who was from work
+C,77,FALSE,non-alternating,77,shortIndefinite,DOsentence,Maria narrated a man a show
+D,77,FALSE,non-alternating,77,shortIndefinite,PDsentence,Maria narrated a show to a man
+E,79,FALSE,non-alternating,79,longIndefinite,DOsentence,Alice grunted a man who was from work a name
+F,79,FALSE,non-alternating,79,longIndefinite,PDsentence,Alice grunted a name to a man who was from work
+G,79,FALSE,non-alternating,79,shortIndefinite,DOsentence,Michael grunted a woman a name
+H,79,FALSE,non-alternating,79,shortIndefinite,PDsentence,Michael grunted a name to a woman
+B,81,FALSE,non-alternating,81,longIndefinite,DOsentence,Bob hollered a man from work some news
+A,81,FALSE,non-alternating,81,longIndefinite,PDsentence,Bob hollered some news to a man from work
+D,81,FALSE,non-alternating,81,shortIndefinite,DOsentence,Alice hollered a woman some news
+C,81,FALSE,non-alternating,81,shortIndefinite,PDsentence,Alice hollered some news to a woman
+F,83,FALSE,non-alternating,83,longIndefinite,DOsentence,Bob squealed a woman from work an answer
+E,83,FALSE,non-alternating,83,longIndefinite,PDsentence,Bob squealed an answer to a woman from work
+H,83,FALSE,non-alternating,83,shortIndefinite,DOsentence,Mary squealed a woman an answer
+G,83,FALSE,non-alternating,83,shortIndefinite,PDsentence,Mary squealed an answer to a woman
+C,85,FALSE,non-alternating,85,longIndefinite,DOsentence,Linda delegated a woman who was from work a task
+D,85,FALSE,non-alternating,85,longIndefinite,PDsentence,Linda delegated a task to a woman who was from work
+A,85,FALSE,non-alternating,85,shortIndefinite,DOsentence,Alice delegated a man a task
+B,85,FALSE,non-alternating,85,shortIndefinite,PDsentence,Alice delegated a task to a man
+G,87,FALSE,non-alternating,87,longIndefinite,DOsentence,Mary screeched a woman wearing a hat a thought
+H,87,FALSE,non-alternating,87,longIndefinite,PDsentence,Mary screeched a thought to a woman wearing a hat
+E,87,FALSE,non-alternating,87,shortIndefinite,DOsentence,Maria screeched a man a thought
+F,87,FALSE,non-alternating,87,shortIndefinite,PDsentence,Maria screeched a thought to a man
+D,89,FALSE,non-alternating,89,longIndefinite,DOsentence,Juan bellowed a man who was from work an order
+C,89,FALSE,non-alternating,89,longIndefinite,PDsentence,Juan bellowed an order to a man who was from work
+B,89,FALSE,non-alternating,89,shortIndefinite,DOsentence,Mary bellowed a man an order
+A,89,FALSE,non-alternating,89,shortIndefinite,PDsentence,Mary bellowed an order to a man
+H,91,FALSE,non-alternating,91,longIndefinite,DOsentence,John cackled a woman wearing a hat some noises
+G,91,FALSE,non-alternating,91,longIndefinite,PDsentence,John cackled some noises to a woman wearing a hat
+F,91,FALSE,non-alternating,91,shortIndefinite,DOsentence,John cackled a man some noises
+E,91,FALSE,non-alternating,91,shortIndefinite,PDsentence,John cackled some noises to a man
+A,93,FALSE,non-alternating,93,longIndefinite,DOsentence,Mary croaked a man wearing a hat a request
+B,93,FALSE,non-alternating,93,longIndefinite,PDsentence,Mary croaked a request to a man wearing a hat
+C,93,FALSE,non-alternating,93,shortIndefinite,DOsentence,Bob croaked a woman a request
+D,93,FALSE,non-alternating,93,shortIndefinite,PDsentence,Bob croaked a request to a woman
+E,95,FALSE,non-alternating,95,longIndefinite,DOsentence,Bob stammered a woman wearing a hat a thought
+F,95,FALSE,non-alternating,95,longIndefinite,PDsentence,Bob stammered a thought to a woman wearing a hat
+G,95,FALSE,non-alternating,95,shortIndefinite,DOsentence,John stammered a woman a thought
+H,95,FALSE,non-alternating,95,shortIndefinite,PDsentence,John stammered a thought to a woman
+B,97,FALSE,non-alternating,97,longIndefinite,DOsentence,Linda remitted a woman who was from work a percentage
+A,97,FALSE,non-alternating,97,longIndefinite,PDsentence,Linda remitted a percentage to a woman who was from work
+D,97,FALSE,non-alternating,97,shortIndefinite,DOsentence,Maria remitted a man a percentage
+C,97,FALSE,non-alternating,97,shortIndefinite,PDsentence,Maria remitted a percentage to a man
+F,99,FALSE,non-alternating,99,longIndefinite,DOsentence,John warbled a man from work a greeting
+E,99,FALSE,non-alternating,99,longIndefinite,PDsentence,John warbled a greeting to a man from work
+H,99,FALSE,non-alternating,99,shortIndefinite,DOsentence,John warbled a woman a greeting
+G,99,FALSE,non-alternating,99,shortIndefinite,PDsentence,John warbled a greeting to a woman
