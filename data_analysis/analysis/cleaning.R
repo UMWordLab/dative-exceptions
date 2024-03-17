@@ -43,3 +43,9 @@ temp <- filler_thres_dat |>
 
 # use anti_join to throw out partids that match bad ones
 # Unnecessary: none met the criteria for discarding
+
+experiment_data <- data2 |>
+  filter(Label == "experimental_trial") |>
+  select(partid, item, sentence, construct, classification, IO, counter, group, Value, zscores)
+
+write.csv(experiment_data, "analysis/cleaned_experiment_data.csv", row.names=FALSE)
