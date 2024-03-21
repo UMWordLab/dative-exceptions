@@ -1,5 +1,6 @@
 library("tidyverse")
 
+# Clean experiment data
 data <- read.csv("data_raw/data.csv")
 fillers <- read.csv("data_raw/fillers_grade.csv")
 
@@ -49,3 +50,6 @@ experiment_data <- data2 |>
   select(partid, item, sentence, construct, classification, IO, counter, group, Value, zscores)
 
 write.csv(experiment_data, "analysis/cleaned_experiment_data.csv", row.names=FALSE)
+
+# Prep model input
+stimuli <- read.csv('stimuli/cleaned_200_pairs.csv')
