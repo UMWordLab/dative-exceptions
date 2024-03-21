@@ -1,0 +1,201 @@
+,Unnamed: 0,item,plural,classification,frequency_rank,recipient_id,DOsentence,PDsentence,DO_score,PD_score,diff
+0,1,101,False,alternating,1,longIndefinite,Bob took a man wearing a hat a gift.,Bob took a gift to a man wearing a hat.,-8.585197508105782,-8.490409997867204,-0.09478751023857868
+1,2,101,False,alternating,1,shortIndefinite,Juan took a woman a gift.,Juan took a gift to a woman.,-8.716455470090972,-9.049860902409492,0.3334054323185196
+2,3,103,False,alternating,3,longIndefinite,Michael gave a man wearing a hat a message.,Michael gave a message to a man wearing a hat.,-9.703496799384446,-9.289815288580876,-0.4136815108035705
+3,4,103,False,alternating,3,shortIndefinite,Bob gave a woman a message.,Bob gave a message to a woman.,-9.827169369698517,-9.804837337871604,-0.022332031826913123
+4,5,105,False,alternating,5,longIndefinite,Linda showed a man who was from work a picture.,Linda showed a picture to a man who was from work.,-9.80944360802184,-10.385426924092613,0.5759833160707721
+5,6,105,False,alternating,5,shortIndefinite,Juan showed a woman a picture.,Juan showed a picture to a woman.,-9.555366329510985,-9.607123974152042,0.051757644641057254
+6,7,107,False,alternating,7,longIndefinite,Maria brought a woman who was wearing a hat a blanket.,Maria brought a blanket to a woman who was wearing a hat.,-10.84482547534518,-9.24075198359916,-1.6040734917460195
+7,8,107,False,alternating,7,shortIndefinite,Juan brought a woman a blanket.,Juan brought a blanket to a woman.,-9.044832484035311,-9.77977060305691,0.7349381190215993
+8,9,109,False,alternating,9,longIndefinite,John paid a man wearing a hat a compliment.,John paid a compliment to a man wearing a hat.,-8.514284862662958,-8.617303622151475,0.10301875948851702
+9,10,109,False,alternating,9,shortIndefinite,Mary paid a woman a compliment.,Mary paid a compliment to a woman.,-11.167692996191787,-11.294437857747917,0.12674486155612996
+10,11,111,False,alternating,11,longIndefinite,Maria offered a man from work a payment.,Maria offered a payment to a man from work.,-9.851273643555388,-10.033884140513779,0.18261049695839127
+11,12,111,False,alternating,11,shortIndefinite,Alice offered a woman a payment.,Alice offered a payment to a woman.,-10.594364659366455,-10.245880246976867,-0.34848441238958827
+12,13,113,False,alternating,13,longIndefinite,Linda sold a woman who was from work some coffee.,Linda sold some coffee to a woman who was from work.,-9.945384817591135,-9.486310218718408,-0.4590745988727267
+13,14,113,False,alternating,13,shortIndefinite,Alice sold a man some coffee.,Alice sold some coffee to a man.,-9.845497739883264,-9.113090757171161,-0.7324069827121029
+14,15,115,False,alternating,15,longIndefinite,Michael hit a woman wearing a hat a curveball.,Michael hit a curveball to a woman wearing a hat.,-10.047172253109734,-9.458498117511983,-0.588674135597751
+15,16,115,False,alternating,15,shortIndefinite,Bob hit a woman a curveball.,Bob hit a curveball to a woman.,-9.121715984583389,-9.358937836959456,0.23722185237606652
+16,17,117,False,alternating,17,longIndefinite,Mary taught a woman wearing a hat a concept.,Mary taught a concept to a woman wearing a hat.,-9.878227137428858,-9.01737372599706,-0.8608534114317976
+17,18,117,False,alternating,17,shortIndefinite,Maria taught a woman a concept.,Maria taught a concept to a woman.,-9.418123482298867,-7.9544430443502625,-1.4636804379486046
+18,19,119,False,alternating,19,longIndefinite,Juan threw a woman wearing a hat a soda.,Juan threw a soda to a woman wearing a hat.,-8.390210560066784,-8.456315271270938,0.0661047112041544
+19,20,119,False,alternating,19,shortIndefinite,John threw a woman a soda.,John threw a soda to a woman.,-7.9028894640700065,-6.724976605064663,-1.1779128590053434
+20,21,121,False,alternating,21,longIndefinite,Linda pushed a woman who was from work a plate.,Linda pushed a plate to a woman who was from work.,-10.221513073235965,-9.770017125131497,-0.45149594810446736
+21,22,121,False,alternating,21,shortIndefinite,John pushed a woman a plate.,John pushed a plate to a woman.,-8.233378387943532,-8.234045932144669,0.0006675442011374599
+22,23,123,True,alternating,23,longIndefinite,Linda flew a team from work some weapons.,Linda flew some weapons to a team from work.,-9.838978959201768,-9.01897565003243,-0.8200033091693371
+23,24,123,True,alternating,23,shortIndefinite,Bob flew a team some weapons.,Bob flew some weapons to a team.,-9.586665701373736,-7.808984159639006,-1.7776815417347303
+24,25,125,False,alternating,25,longIndefinite,Bob promised a woman who was wearing a hat a chance.,Bob promised a chance to a woman who was wearing a hat.,-8.940967158636937,-10.272300980234292,1.3313338215973545
+25,26,125,False,alternating,25,shortIndefinite,Michael promised a man a chance.,Michael promised a chance to a man.,-11.744915304088499,-11.199404342810036,-0.5455109612784632
+26,27,127,False,alternating,27,longIndefinite,John kicked a woman who was from work a football.,John kicked a football to a woman who was from work.,-8.4467289769648,-8.467336642219884,0.020607665255083063
+27,28,127,False,alternating,27,shortIndefinite,Michael kicked a woman a football.,Michael kicked a football to a woman.,-8.655996484096315,-9.254974850730138,0.5989783666338226
+28,29,129,False,alternating,29,longIndefinite,Alice granted a woman wearing a hat another chance.,Alice granted another chance to a woman wearing a hat.,-9.759397363891122,-9.621063671926024,-0.13833369196509793
+29,30,129,False,alternating,29,shortIndefinite,Linda granted a man another chance.,Linda granted another chance to a man.,-10.879775314625581,-10.640850682684713,-0.23892463194086844
+30,31,131,False,alternating,31,longIndefinite,Michael slipped a man from work a pill.,Michael slipped a pill to a man from work.,-10.318427468244995,-10.407064314909043,0.08863684666404836
+31,32,131,False,alternating,31,shortIndefinite,John slipped a woman a pill.,John slipped a pill to a woman.,-8.329497655882427,-8.431397628323353,0.10189997244092552
+32,33,133,False,alternating,33,longIndefinite,John quoted a man wearing a hat a sentence.,John quoted a sentence to a man wearing a hat.,-8.317999140230002,-8.440012632125587,0.12201349189558464
+33,34,133,False,alternating,33,shortIndefinite,Michael quoted a woman a sentence.,Michael quoted a sentence to a woman.,-8.025208154356623,-10.56387053147725,2.5386623771206267
+34,35,135,False,alternating,35,longIndefinite,Linda owed a woman wearing a hat a job.,Linda owed a job to a woman wearing a hat.,-9.575437452177344,-9.398830890115459,-0.17660656206188463
+35,36,135,False,alternating,35,shortIndefinite,Bob owed a woman a job.,Bob owed a job to a woman.,-9.769574165251889,-9.807260293171714,0.03768612791982484
+36,37,137,False,alternating,37,longIndefinite,Mary slid a man from work a note.,Mary slid a note to a man from work.,-9.682493214457256,-10.09839200031703,0.415898785859774
+37,38,137,False,alternating,37,shortIndefinite,Linda slid a woman a note.,Linda slid a note to a woman.,-9.920992353203644,-10.372398771512866,0.45140641830922235
+38,39,139,False,alternating,39,longIndefinite,Mary assigned a woman who was from work a desk.,Mary assigned a desk to a woman who was from work.,-7.999187392563259,-7.126065353155163,-0.8731220394080959
+39,40,139,False,alternating,39,shortIndefinite,Michael assigned a woman a desk.,Michael assigned a desk to a woman.,-4.702970921128197,-7.083734841523191,2.380763920394994
+40,41,141,False,alternating,41,longIndefinite,Alice guaranteed a man wearing a hat a spot.,Alice guaranteed a spot to a man wearing a hat.,-9.39030325018485,-9.227126912581273,-0.16317633760357708
+41,42,141,False,alternating,41,shortIndefinite,John guaranteed a man a spot.,John guaranteed a spot to a man.,-8.07683822219136,-8.302021496044365,0.22518327385300374
+42,43,143,False,alternating,43,longIndefinite,John floated a woman who was wearing a hat a bottle.,John floated a bottle to a woman who was wearing a hat.,-8.574206156041496,-8.772488768981798,0.19828261294030192
+43,44,143,False,alternating,43,shortIndefinite,Michael floated a woman a bottle.,Michael floated a bottle to a woman.,-10.354801975050297,-10.54354752067998,0.1887455456296827
+44,45,145,False,alternating,45,longIndefinite,Maria pitched a woman who was from work a proposal.,Maria pitched a proposal to a woman who was from work.,-10.251351185075839,-10.315562509135667,0.0642113240598281
+45,46,145,False,alternating,45,shortIndefinite,Bob pitched a man a proposal.,Bob pitched a proposal to a man.,-10.03189278377071,-9.98477919698133,-0.04711358678937927
+46,47,147,False,alternating,47,longIndefinite,Michael shipped a man who was wearing a hat a box.,Michael shipped a box to a man who was wearing a hat.,-9.520051365847802,-9.408165037049699,-0.11188632879810356
+47,48,147,False,alternating,47,shortIndefinite,Michael shipped a man a box.,Michael shipped a box to a man.,-8.02208096179924,-9.443506888718057,1.4214259269188165
+48,49,149,False,alternating,49,longIndefinite,John slammed a woman who was from work a fastball.,John slammed a fastball to a woman who was from work.,-8.737598776577393,-8.652970547216848,-0.08462822936054515
+49,50,149,False,alternating,49,shortIndefinite,Bob slammed a woman a fastball.,Bob slammed a fastball to a woman.,-9.390254105602827,-9.50447328864188,0.11421918303905265
+50,51,151,False,alternating,51,longIndefinite,Alice signaled a woman from work a formation.,Alice signaled a formation to a woman from work.,-9.605372763184683,-9.318900883953123,-0.28647187923155926
+51,52,151,False,alternating,51,shortIndefinite,Bob signaled a woman a formation.,Bob signaled a formation to a woman.,-5.531575734972052,-7.4204397137120495,1.8888639787399972
+52,53,153,False,alternating,53,longIndefinite,Bob snuck a woman who was from work a cookie.,Bob snuck a cookie to a woman who was from work.,-10.16868107616969,-10.297686536994686,0.1290054608249953
+53,54,153,False,alternating,53,shortIndefinite,Linda snuck a woman a cookie.,Linda snuck a cookie to a woman.,-11.277776462279592,-11.082017423899508,-0.1957590383800838
+54,55,155,False,alternating,55,longIndefinite,Linda shoved a man who was from work a letter.,Linda shoved a letter to a man who was from work.,-10.097911326815375,-10.063617962659364,-0.03429336415601014
+55,56,155,False,alternating,55,shortIndefinite,John shoved a woman a letter.,John shoved a letter to a woman.,-8.269059835714492,-8.286203372743625,0.01714353702913307
+56,57,157,False,alternating,57,longIndefinite,Mary hauled a man who was wearing a hat a shipment.,Mary hauled a shipment to a man who was wearing a hat.,-10.520812522379833,-10.247578553141228,-0.2732339692386052
+57,58,157,False,alternating,57,shortIndefinite,Alice hauled a man a shipment.,Alice hauled a shipment to a man.,-11.432961819738024,-9.921549009145139,-1.5114128105928852
+58,59,159,False,alternating,59,longIndefinite,Bob willed a woman who was from work a painting.,Bob willed a painting to a woman who was from work.,-8.109387004628886,-9.890233494999897,1.7808464903710117
+59,60,159,False,alternating,59,shortIndefinite,John willed a man a painting.,John willed a painting to a man.,-8.305835833753047,-8.451834084489853,0.14599825073680606
+60,61,161,False,alternating,61,longIndefinite,Mary mailed a woman from work a note.,Mary mailed a note to a woman from work.,-8.93459631481618,-10.014871610094428,1.0802752952782484
+61,62,161,False,alternating,61,shortIndefinite,Alice mailed a man a note.,Alice mailed a note to a man.,-10.460114289376337,-10.094207446739109,-0.3659068426372283
+62,63,163,False,alternating,63,longIndefinite,Maria phoned a man who was from work a request.,Maria phoned a request to a man who was from work.,-10.898189881793204,-10.441316509448196,-0.456873372345008
+63,64,163,False,alternating,63,shortIndefinite,Maria phoned a woman a request.,Maria phoned a request to a woman.,-11.62256827191291,-10.57958757856149,-1.042980693351419
+64,65,165,False,alternating,65,longIndefinite,John flung a woman wearing a hat an apple.,John flung an apple to a woman wearing a hat.,-8.51346402963841,-8.634961967610783,0.1214979379723733
+65,66,165,False,alternating,65,shortIndefinite,Linda flung a man an apple.,Linda flung an apple to a man.,-9.765843854465366,-10.915835238199781,1.149991383734415
+66,67,167,False,alternating,67,longIndefinite,Alice chucked a woman who was wearing a hat a bag.,Alice chucked a bag to a woman who was wearing a hat.,-10.293342891683173,-10.65631679429028,0.3629739026071075
+67,68,167,False,alternating,67,shortIndefinite,Juan chucked a woman a bag.,Juan chucked a bag to a woman.,-9.800331179557286,-9.719089761154311,-0.08124141840297483
+68,69,169,False,alternating,69,longIndefinite,John repaid a woman from work some money.,John repaid some money to a woman from work.,-8.38398725448511,-8.28086415702668,-0.10312309745842896
+69,70,169,False,alternating,69,shortIndefinite,Maria repaid a woman some money.,Maria repaid some money to a woman.,-8.998571987201299,-9.069712707615519,0.07114072041422048
+70,71,171,False,alternating,71,longIndefinite,Alice wheeled a man wearing a hat some fruit.,Alice wheeled some fruit to a man wearing a hat.,-8.63828571998372,-8.534189433942085,-0.10409628604163501
+71,72,171,False,alternating,71,shortIndefinite,Mary wheeled a man some fruit.,Mary wheeled some fruit to a man.,-8.52910850656246,-8.478626886388813,-0.0504816201736471
+72,73,173,False,alternating,73,longIndefinite,John hurled a woman from work a ball.,John hurled a ball to a woman from work.,-8.563589872404403,-8.331571349795619,-0.23201852260878475
+73,74,173,False,alternating,73,shortIndefinite,Linda hurled a man a ball.,Linda hurled a ball to a man.,-9.966592388883782,-9.799458320393388,-0.16713406849039458
+74,75,175,False,alternating,75,longIndefinite,Bob faxed a woman who was from work a form.,Bob faxed a form to a woman who was from work.,-10.189287353587753,-10.117493562699497,-0.07179379088825577
+75,76,175,False,alternating,75,shortIndefinite,John faxed a woman a form.,John faxed a form to a woman.,-8.48177378683239,-8.51777840372133,0.03600461688894008
+76,77,177,False,alternating,77,longIndefinite,Michael telephoned a man from work some news.,Michael telephoned some news to a man from work.,-8.65229272377865,-8.783270605258316,0.13097788147966583
+77,78,177,False,alternating,77,shortIndefinite,Maria telephoned a man some news.,Maria telephoned some news to a man.,-6.9217911147154165,-7.017434956121105,0.09564384140568816
+78,79,179,False,alternating,79,longIndefinite,John heaved a man who was wearing a hat a ball.,John heaved a ball to a man who was wearing a hat.,-8.54259323006207,-8.240995874338786,-0.3015973557232847
+79,80,179,False,alternating,79,shortIndefinite,Mary heaved a man a ball.,Mary heaved a ball to a man.,-7.933176232358037,-9.135541815865524,1.2023655835074871
+80,81,181,False,alternating,81,longIndefinite,Mary slung a man who was wearing a hat a glance.,Mary slung a glance to a man who was wearing a hat.,-9.575121126261791,-9.664417864591618,0.08929673832982665
+81,82,181,False,alternating,81,shortIndefinite,Bob slung a man a glance.,Bob slung a glance to a man.,-9.633216149078608,-9.932477200879227,0.29926105180061846
+82,83,183,False,alternating,83,longIndefinite,Linda loaned a man from work some equipment.,Linda loaned some equipment to a man from work.,-8.673904543106865,-8.541751296758088,-0.13215324634877668
+83,84,183,False,alternating,83,shortIndefinite,John loaned a man some equipment.,John loaned some equipment to a man.,-7.9532828024598015,-8.041426375244644,0.0881435727848423
+84,85,185,False,alternating,85,longIndefinite,Alice ceded a woman wearing a hat a case.,Alice ceded a case to a woman wearing a hat.,-9.059124795012892,-9.886135227828218,0.8270104328153263
+85,86,185,False,alternating,85,shortIndefinite,Michael ceded a man a case.,Michael ceded a case to a man.,-10.025512089938065,-10.90787310075825,0.8823610108201851
+86,87,187,False,alternating,87,longIndefinite,Mary lugged a woman from work some groceries.,Mary lugged some groceries to a woman from work.,-10.141753118258043,-9.706504683592415,-0.43524843466562757
+87,88,187,False,alternating,87,shortIndefinite,Mary lugged a woman some groceries.,Mary lugged some groceries to a woman.,-9.97033847241332,-9.62518545495104,-0.34515301746228033
+88,89,189,True,alternating,89,longIndefinite,Linda bused a team from work some instruments.,Linda bused some instruments to a team from work.,-9.30998689442181,-9.320112711797291,0.01012581737548146
+89,90,189,True,alternating,89,shortIndefinite,Mary bused a team some instruments.,Mary bused some instruments to a team.,-9.244805430584378,-9.234085357956094,-0.010720072628284782
+90,91,191,True,alternating,91,longIndefinite,Bob carted a team from work some books.,Bob carted some books to a team from work.,-9.756711006067448,-9.605447693905429,-0.15126331216201905
+91,92,191,True,alternating,91,shortIndefinite,Maria carted a team some books.,Maria carted some books to a team.,-9.329304398520566,-10.015026202346109,0.6857218038255422
+92,93,193,False,alternating,93,longIndefinite,Maria punted a woman who was wearing a hat a ball.,Maria punted a ball to a woman who was wearing a hat.,-10.60952052822038,-9.15439743280075,-1.45512309541963
+93,94,193,False,alternating,93,shortIndefinite,John punted a woman a ball.,John punted a ball to a woman.,-7.915812350326004,-8.251568880214739,0.3357565298887355
+94,95,195,False,alternating,95,longIndefinite,John bequeathed a man wearing a hat a portrait.,John bequeathed a portrait to a man wearing a hat.,-8.527265059326568,-8.60604739758852,0.07878233826195213
+95,96,195,False,alternating,95,shortIndefinite,Linda bequeathed a man a portrait.,Linda bequeathed a portrait to a man.,-9.401519911658172,-10.024566195232495,0.6230462835743236
+96,97,197,False,alternating,97,longIndefinite,Alice cabled a man from work some directions.,Alice cabled some directions to a man from work.,-10.390702696639927,-9.250019846055514,-1.1406828505844135
+97,98,197,False,alternating,97,shortIndefinite,Bob cabled a man some directions.,Bob cabled some directions to a man.,-10.175430970444326,-9.34978013296853,-0.8256508374757967
+98,99,199,False,alternating,99,longIndefinite,Michael catapulted a man who was wearing a hat a container.,Michael catapulted a container to a man who was wearing a hat.,-9.852546465856477,-8.26174896770576,-1.5907974981507174
+99,100,199,False,alternating,99,shortIndefinite,Alice catapulted a woman a container.,Alice catapulted a container to a woman.,-9.088488164876612,-8.979931104588943,-0.10855706028766932
+100,101,1,False,non-alternating,1,longIndefinite,John said a woman from work a word.,John said a word to a woman from work.,-8.377773019302168,-8.499368497366598,0.12159547806442994
+101,102,1,False,non-alternating,1,shortIndefinite,Michael said a man a word.,Michael said a word to a man.,-10.450927841877972,-11.228429857060044,0.7775020151820726
+102,103,3,False,non-alternating,3,longIndefinite,Michael reported a man who was from work some numbers.,Michael reported some numbers to a man who was from work.,-9.854911711064128,-9.541384643517146,-0.3135270675469819
+103,104,3,False,non-alternating,3,shortIndefinite,John reported a woman some numbers.,John reported some numbers to a woman.,-8.345417630964674,-8.387532131474142,0.0421145005094683
+104,105,5,False,non-alternating,5,longIndefinite,Alice raised a man from work a bucket.,Alice raised a bucket to a man from work.,-10.058708210439637,-10.623153116776473,0.5644449063368366
+105,106,5,False,non-alternating,5,shortIndefinite,Maria raised a man a bucket.,Maria raised a bucket to a man.,-8.65358709813528,-10.219787847927389,1.5662007497921095
+106,107,7,False,non-alternating,7,longIndefinite,Mary described a man wearing a hat a headline.,Mary described a headline to a man wearing a hat.,-9.360953105046715,-8.728385739147797,-0.6325673658989182
+107,108,7,False,non-alternating,7,shortIndefinite,Alice described a woman a headline.,Alice described a headline to a woman.,-9.206157230747506,-8.479679886576834,-0.7264773441706716
+108,109,9,False,non-alternating,9,longIndefinite,Mary stated a woman wearing a hat an idea.,Mary stated an idea to a woman wearing a hat.,-8.695802205217504,-8.8172457637171,0.1214435584995961
+109,110,9,False,non-alternating,9,shortIndefinite,Bob stated a woman an idea.,Bob stated an idea to a woman.,-7.116936634614494,-8.324311191898946,1.207374557284452
+110,111,11,False,non-alternating,11,longIndefinite,Juan presented a woman from work a painting.,Juan presented a painting to a woman from work.,-8.558223163339589,-9.596442376096348,1.0382192127567595
+111,112,11,False,non-alternating,11,shortIndefinite,Alice presented a man a painting.,Alice presented a painting to a man.,-9.781678086848709,-10.348507048213854,0.5668289613651449
+112,113,13,False,non-alternating,13,longIndefinite,Bob addressed a man wearing a hat a message.,Bob addressed a message to a man wearing a hat.,-8.67234959730361,-9.003093220798597,0.3307436234949872
+113,114,13,False,non-alternating,13,shortIndefinite,Alice addressed a woman a message.,Alice addressed a message to a woman.,-9.018376733246527,-9.816516507767986,0.7981397745214593
+114,115,15,False,non-alternating,15,longIndefinite,Alice admitted a man who was wearing a hat a slip-up.,Alice admitted a slip-up to a man who was wearing a hat.,-10.35131574584818,-9.853456756475403,-0.4978589893727765
+115,116,15,False,non-alternating,15,shortIndefinite,Alice admitted a woman a slip-up.,Alice admitted a slip-up to a woman.,-11.559938719668898,-10.0385523836513,-1.5213863360175974
+116,117,17,False,non-alternating,17,longIndefinite,Bob announced a woman who was from work some new results.,Bob announced some new results to a woman who was from work.,-9.473660249072045,-9.276374719609986,-0.19728552946205902
+117,118,17,False,non-alternating,17,shortIndefinite,Maria announced a man some new results.,Maria announced some new results to a man.,-10.612093614657436,-9.280200279652671,-1.3318933350047644
+118,119,19,False,non-alternating,19,longIndefinite,Juan expressed a man who was wearing a hat a thought.,Juan expressed a thought to a man who was wearing a hat.,-9.541240673053546,-9.291925796358921,-0.2493148766946245
+119,120,19,False,non-alternating,19,shortIndefinite,Michael expressed a woman a thought.,Michael expressed a thought to a woman.,-11.378869872198198,-10.426079463084632,-0.9527904091135664
+120,121,21,False,non-alternating,21,longIndefinite,Michael contributed a woman who was from work some food.,Michael contributed some food to a woman who was from work.,-10.450042863426924,-10.414287566917867,-0.03575529650905729
+121,122,21,False,non-alternating,21,shortIndefinite,Maria contributed a man some food.,Maria contributed some food to a man.,-11.033935488845067,-10.248147278097772,-0.7857882107472953
+122,123,23,False,non-alternating,23,longIndefinite,Bob recommended a woman wearing a hat a band.,Bob recommended a band to a woman wearing a hat.,-8.339917708449729,-9.078244727769752,0.7383270193200229
+123,124,23,False,non-alternating,23,shortIndefinite,Maria recommended a woman a band.,Maria recommended a band to a woman.,-10.062113411099222,-9.894652631793825,-0.16746077930539727
+124,125,25,False,non-alternating,25,longIndefinite,Michael repeated a man wearing a hat some words.,Michael repeated some words to a man wearing a hat.,-9.740415221978918,-9.183179847018545,-0.5572353749603725
+125,126,25,False,non-alternating,25,shortIndefinite,Alice repeated a woman some words.,Alice repeated some words to a woman.,-9.470625231962423,-9.534545205780802,0.0639199738183791
+126,127,27,False,non-alternating,27,longIndefinite,John proposed a woman from work an idea.,John proposed an idea to a woman from work.,-7.867442080441314,-8.203161015362912,0.33571893492159877
+127,128,27,False,non-alternating,27,shortIndefinite,Mary proposed a man an idea.,Mary proposed an idea to a man.,-8.85554261272763,-9.260434734559329,0.40489212183169876
+128,129,29,False,non-alternating,29,longIndefinite,Michael displayed a man wearing a hat a photograph.,Michael displayed a photograph to a man wearing a hat.,-9.621384049029654,-9.820475887095043,0.19909183806538877
+129,130,29,False,non-alternating,29,shortIndefinite,Juan displayed a man a photograph.,Juan displayed a photograph to a man.,-8.910525155849195,-9.736402893407675,0.8258777375584803
+130,131,31,False,non-alternating,31,longIndefinite,Maria shouted a woman wearing a hat a name.,Maria shouted a name to a woman wearing a hat.,-10.370724392278897,-10.35298861252873,-0.017735779750166714
+131,132,31,False,non-alternating,31,shortIndefinite,Linda shouted a man a name.,Linda shouted a name to a man.,-10.932084246544695,-11.329984599774154,0.39790035322945805
+132,133,33,False,non-alternating,33,longIndefinite,John yelled a woman from work some directions.,John yelled some directions to a woman from work.,-8.506425465542486,-8.482419371550233,-0.024006093992253952
+133,134,33,False,non-alternating,33,shortIndefinite,Maria yelled a man some directions.,Maria yelled some directions to a man.,-11.376625992443438,-9.587544612510339,-1.7890813799330996
+134,135,35,False,non-alternating,35,longIndefinite,Linda communicated a woman from work a point.,Linda communicated a point to a woman from work.,-10.273699634778884,-9.15976654129723,-1.1139330934816538
+135,136,35,False,non-alternating,35,shortIndefinite,Juan communicated a man a point.,Juan communicated a point to a man.,-9.809599829507569,-9.091432929295333,-0.7181669002122355
+136,137,37,False,non-alternating,37,longIndefinite,John restored a woman who was wearing a hat some money.,John restored some money to a woman who was wearing a hat.,-8.39746584592106,-8.61968540077359,0.22221955485253098
+137,138,37,False,non-alternating,37,shortIndefinite,Bob restored a man some money.,Bob restored some money to a man.,-9.741977012054551,-10.081870356782558,0.33989334472800614
+138,139,39,False,non-alternating,39,longIndefinite,John snapped a man who was wearing a hat a comment.,John snapped a comment to a man who was wearing a hat.,-8.685559134539966,-8.683149580355009,-0.0024095541849575852
+139,140,39,False,non-alternating,39,shortIndefinite,Michael snapped a man a comment.,Michael snapped a comment to a man.,-12.184508507637727,-12.13842621375772,-0.04608229388000673
+140,141,41,True,non-alternating,41,longIndefinite,John distributed a team from work some books.,John distributed some books to a team from work.,-7.586377052934339,-7.683097232415675,0.09672017948133593
+141,142,41,True,non-alternating,41,shortIndefinite,Linda distributed a team some books.,Linda distributed some books to a team.,-9.47947844161286,-9.512861636551122,0.033383194938261695
+142,143,43,True,non-alternating,43,longIndefinite,Mary donated a team from work a painting.,Mary donated a painting to a team from work.,-8.985463060559358,-9.812785599444702,0.827322538885344
+143,144,43,True,non-alternating,43,shortIndefinite,Bob donated a team a painting.,Bob donated a painting to a team.,-9.611837070668068,-9.501989335056493,-0.10984773561157546
+144,145,45,False,non-alternating,45,longIndefinite,Mary administered a woman who was wearing a hat an antidote.,Mary administered an antidote to a woman who was wearing a hat.,-9.603673647828842,-8.686198418104885,-0.9174752297239568
+145,146,45,False,non-alternating,45,shortIndefinite,Bob administered a woman an antidote.,Bob administered an antidote to a woman.,-9.047933336372715,-8.685427821394246,-0.3625055149784693
+146,147,47,False,non-alternating,47,longIndefinite,Juan conveyed a man from work a thought.,Juan conveyed a thought to a man from work.,-9.637087380248815,-9.707202116757351,0.07011473650853617
+147,148,47,False,non-alternating,47,shortIndefinite,Alice conveyed a man a thought.,Alice conveyed a thought to a man.,-10.06585232416667,-10.642921682218532,0.5770693580518618
+148,149,49,False,non-alternating,49,longIndefinite,Juan blabbed a man who was wearing a hat some information.,Juan blabbed some information to a man who was wearing a hat.,-9.450962343562848,-9.333451747275557,-0.11751059628729088
+149,150,49,False,non-alternating,49,shortIndefinite,Michael blabbed a woman some information.,Michael blabbed some information to a woman.,-10.694091317840229,-10.2162851551647,-0.4778061626755292
+150,151,51,False,non-alternating,51,longIndefinite,Maria surrendered a woman wearing a hat some guns.,Maria surrendered some guns to a woman wearing a hat.,-10.594579505235865,-10.864676165853314,0.2700966606174493
+151,152,51,False,non-alternating,51,shortIndefinite,John surrendered a woman some guns.,John surrendered some guns to a woman.,-8.417567132617494,-8.526171990326072,0.10860485770857764
+152,153,53,False,non-alternating,53,longIndefinite,Bob articulated a woman from work a rule.,Bob articulated a rule to a woman from work.,-10.192844283703664,-9.960276534444928,-0.23256774925873636
+153,154,53,False,non-alternating,53,shortIndefinite,Bob articulated a man a rule.,Bob articulated a rule to a man.,-10.03677217238996,-10.322750598913291,0.2859784265233323
+154,155,55,False,non-alternating,55,longIndefinite,Linda groaned a man wearing a hat a reply.,Linda groaned a reply to a man wearing a hat.,-9.886391940073514,-9.780788252751993,-0.10560368732152092
+155,156,55,False,non-alternating,55,shortIndefinite,Alice groaned a man a reply.,Alice groaned a reply to a man.,-9.657671204961876,-10.72800341408674,1.0703322091248637
+156,157,57,False,non-alternating,57,longIndefinite,Michael roared a woman who was from work an order.,Michael roared an order to a woman who was from work.,-10.23890347315509,-10.42951538310788,0.1906119099527892
+157,158,57,False,non-alternating,57,shortIndefinite,Mary roared a woman an order.,Mary roared an order to a woman.,-10.42284018770056,-10.272543521170277,-0.1502966665302825
+158,159,59,False,non-alternating,59,longIndefinite,Maria recounted a woman from work some information.,Maria recounted some information to a woman from work.,-9.636226344874386,-10.558703613395373,0.9224772685209874
+159,160,59,False,non-alternating,59,shortIndefinite,Michael recounted a man some information.,Michael recounted some information to a man.,-10.49202768480774,-10.874076956948334,0.3820492721405948
+160,161,61,False,non-alternating,61,longIndefinite,Mary denounced a man from work a law.,Mary denounced a law to a man from work.,-11.399104566768372,-8.899825734445905,-2.4992788323224673
+161,162,61,False,non-alternating,61,shortIndefinite,Mary denounced a man a law.,Mary denounced a law to a man.,-11.163225799719823,-8.716389596140491,-2.4468362035793323
+162,163,63,False,non-alternating,63,longIndefinite,Alice murmured a woman from work a comment.,Alice murmured a comment to a woman from work.,-10.05660535321067,-9.984692089279534,-0.07191326393113684
+163,164,63,False,non-alternating,63,shortIndefinite,Mary murmured a woman a comment.,Mary murmured a comment to a woman.,-10.90672028449731,-10.90134975752833,-0.005370526968979661
+164,165,65,False,non-alternating,65,longIndefinite,Michael moaned a man wearing a hat a plea.,Michael moaned a plea to a man wearing a hat.,-8.451138803424621,-9.011194140888378,0.5600553374637567
+165,166,65,False,non-alternating,65,shortIndefinite,Michael moaned a man a plea.,Michael moaned a plea to a man.,-8.723283363564322,-9.309455876664872,0.58617251310055
+166,167,67,True,non-alternating,67,longIndefinite,Alice dispatched a team from work some meals.,Alice dispatched some meals to a team from work.,-8.875782514757386,-8.663579640832772,-0.212202873924614
+167,168,67,True,non-alternating,67,shortIndefinite,Linda dispatched a team some meals.,Linda dispatched some meals to a team.,-8.987481735195326,-9.325321614669306,0.33783987947398053
+168,169,69,False,non-alternating,69,longIndefinite,Maria mumbled a man from work some news.,Maria mumbled some news to a man from work.,-8.221007036034308,-9.829872806104751,1.6088657700704427
+169,170,69,False,non-alternating,69,shortIndefinite,John mumbled a man some news.,John mumbled some news to a man.,-8.261760682870134,-8.405056516615513,0.1432958337453787
+170,171,71,True,non-alternating,71,longIndefinite,Mary furnished a team from work some forms.,Mary furnished some forms to a team from work.,-9.326076477050282,-8.895181683467053,-0.4308947935832297
+171,172,71,True,non-alternating,71,shortIndefinite,John furnished a team some forms.,John furnished some forms to a team.,-7.957184441679592,-8.000703991992914,0.043519550313321886
+172,173,73,False,non-alternating,73,longIndefinite,Alice howled a woman from work a complaint.,Alice howled a complaint to a woman from work.,-8.350605148647553,-8.72289803611894,0.3722928874713869
+173,174,73,False,non-alternating,73,shortIndefinite,Michael howled a man a complaint.,Michael howled a complaint to a man.,-9.565852085088949,-10.295806611884071,0.7299545267951224
+174,175,75,False,non-alternating,75,longIndefinite,Maria grumbled a man who was from work a name.,Maria grumbled a name to a man who was from work.,-8.52608849912248,-9.723249918147054,1.1971614190245745
+175,176,75,False,non-alternating,75,shortIndefinite,Juan grumbled a man a name.,Juan grumbled a name to a man.,-9.476786026967186,-9.914742729171328,0.43795670220414173
+176,177,77,False,non-alternating,77,longIndefinite,Juan narrated a woman who was from work a show.,Juan narrated a show to a woman who was from work.,-8.43130070564943,-9.257539786319953,0.826239080670522
+177,178,77,False,non-alternating,77,shortIndefinite,Maria narrated a man a show.,Maria narrated a show to a man.,-10.04887624043038,-10.175876082209301,0.12699984177892176
+178,179,79,False,non-alternating,79,longIndefinite,Alice grunted a man who was from work a name.,Alice grunted a name to a man who was from work.,-8.890813166715086,-10.106383973989256,1.2155708072741707
+179,180,79,False,non-alternating,79,shortIndefinite,Michael grunted a woman a name.,Michael grunted a name to a woman.,-8.334066822049857,-10.021439502691134,1.6873726806412765
+180,181,81,False,non-alternating,81,longIndefinite,Bob hollered a man from work some news.,Bob hollered some news to a man from work.,-9.351383038507059,-9.492538295880102,0.14115525737304324
+181,182,81,False,non-alternating,81,shortIndefinite,Alice hollered a woman some news.,Alice hollered some news to a woman.,-8.811439423469004,-9.345327679057132,0.5338882555881277
+182,183,83,False,non-alternating,83,longIndefinite,Bob squealed a woman from work an answer.,Bob squealed an answer to a woman from work.,-10.211290583532506,-9.939705719956748,-0.2715848635757574
+183,184,83,False,non-alternating,83,shortIndefinite,Mary squealed a woman an answer.,Mary squealed an answer to a woman.,-10.57931283595478,-10.08193394996805,-0.4973788859867305
+184,185,85,False,non-alternating,85,longIndefinite,Linda delegated a woman who was from work a task.,Linda delegated a task to a woman who was from work.,-10.519955874420603,-9.402429747161996,-1.117526127258607
+185,186,85,False,non-alternating,85,shortIndefinite,Alice delegated a man a task.,Alice delegated a task to a man.,-10.556739637481277,-8.977303523185121,-1.579436114296156
+186,187,87,False,non-alternating,87,longIndefinite,Mary screeched a woman wearing a hat a thought.,Mary screeched a thought to a woman wearing a hat.,-9.982131809263983,-10.164223870620088,0.182092061356105
+187,188,87,False,non-alternating,87,shortIndefinite,Maria screeched a man a thought.,Maria screeched a thought to a man.,-10.468603769372809,-10.706308054836757,0.2377042854639484
+188,189,89,False,non-alternating,89,longIndefinite,Juan bellowed a man who was from work an order.,Juan bellowed an order to a man who was from work.,-9.316292610274338,-9.076789473420337,-0.23950313685400104
+189,190,89,False,non-alternating,89,shortIndefinite,Mary bellowed a man an order.,Mary bellowed an order to a man.,-8.234116643657842,-9.597704226310515,1.3635875826526735
+190,191,91,False,non-alternating,91,longIndefinite,John cackled a woman wearing a hat some noises.,John cackled some noises to a woman wearing a hat.,-8.31454606835215,-8.473257646779338,0.1587115784271873
+191,192,91,False,non-alternating,91,shortIndefinite,John cackled a man some noises.,John cackled some noises to a man.,-8.255115335480799,-8.459821655729549,0.20470632024875002
+192,193,93,False,non-alternating,93,longIndefinite,Mary croaked a man wearing a hat a request.,Mary croaked a request to a man wearing a hat.,-9.616173247870051,-9.682792256799594,0.06661900892954264
+193,194,93,False,non-alternating,93,shortIndefinite,Bob croaked a woman a request.,Bob croaked a request to a woman.,-10.21417259241963,-10.190044164065531,-0.02412842835409812
+194,195,95,False,non-alternating,95,longIndefinite,Bob stammered a woman wearing a hat a thought.,Bob stammered a thought to a woman wearing a hat.,-9.231523723861635,-9.485273170953565,0.2537494470919306
+195,196,95,False,non-alternating,95,shortIndefinite,John stammered a woman a thought.,John stammered a thought to a woman.,-8.41580546751374,-8.498893963600834,0.08308849608709323
+196,197,97,False,non-alternating,97,longIndefinite,Linda remitted a woman who was from work a percentage.,Linda remitted a percentage to a woman who was from work.,-10.40808132999152,-10.418810755907689,0.010729425916169433
+197,198,97,False,non-alternating,97,shortIndefinite,Maria remitted a man a percentage.,Maria remitted a percentage to a man.,-9.287170033247307,-9.508829146953106,0.22165911370579927
+198,199,99,False,non-alternating,99,longIndefinite,John warbled a man from work a greeting.,John warbled a greeting to a man from work.,-8.604407804802205,-8.745821591907776,0.14141378710557007
+199,200,99,False,non-alternating,99,shortIndefinite,John warbled a woman a greeting.,John warbled a greeting to a woman.,-8.460794239465004,-8.57610945487155,0.11531521540654666

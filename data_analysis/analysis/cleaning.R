@@ -51,5 +51,42 @@ experiment_data <- data2 |>
 
 write.csv(experiment_data, "analysis/cleaned_experiment_data.csv", row.names=FALSE)
 
+
 # Prep model input
 stimuli <- read.csv('stimuli/cleaned_200_pairs.csv')
+stimuli <- stimuli |>
+  select(-c(group)) |>
+  pivot_wider(names_from=sent_construct, values_from=sentence)
+write.csv(stimuli, "stimuli/wider_pairs.csv")
+
+# Process model output
+scores <- read.csv('data_raw/wider_pairs_scores.csv')
+scores <- scores |>
+  select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff)
+
+scores |> 
+  group_by(classification) |>
+  summarize(
+    mean_diff=mean(diff, na.rm=TRUE), 
+    std_diff=sd(diff, na.rm=TRUE), 
+    mean_DO=mean(DO_score, na.rm=TRUE), 
+    mean_PD=mean(PD_score, na.rm=TRUE)
+    )
+
+# Add sentence pair IDs?
+stimuli <- stimuli |>
+  mutate(sent_pair_id=row_number()) |>
+  relocate(sent_pair_id)
+scores <- scores |>
+  mutate(sent_pair_id=row_number()) |>
+  relocate(sent_pair_id)
+
+temp <- stimuli |>
+  pivot_longer(cols=c(DOsentence, PDsentence), names_to='sent_const', values_to='sentence')
+experiment_data <- experiment_data |> 
+  merge(temp[, c("sentence", "sent_pair_id")], by="sentence") |>
+  relocate(sent_pair_id)
+
+# How to summarize experimental data?
+experiment_data |>
+  group_by(sent_pair_id, )
