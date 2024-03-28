@@ -203,7 +203,7 @@ model_scores <- model_scores |>
   mutate(
     DO_avg=mean(c_across(c(DO_score1, DO_score2, DO_score3, DO_score4, DO_score5)), na.rm=TRUE),
     PD_avg=mean(c_across(c(PD_score1, PD_score2, PD_score3, PD_score4, PD_score5)), na.rm=TRUE),
-    diff_avg=mean(c_across(c(diff1, diff2, diff3, diff4, diff5)), na.rm=TRUE)
+    diff_avg=-1 * mean(c_across(c(diff1, diff2, diff3, diff4, diff5)), na.rm=TRUE)
   )
 model_scores |>
   group_by(classification) |>
@@ -216,21 +216,51 @@ write.csv(model_scores, "analysis/cleaned_model_data.csv")
 
 # Add model data to experiment data
 exp_mod_data <- experiment_data |>
-  left_join(select(model_scores, DO_avg, PD_avg, diff_avg, sent_pair_id), join_by(sent_pair_id)) |>
+  left_join(
+    select(model_scores, DO_avg, PD_avg, diff_avg, sent_pair_id), join_by(sent_pair_id)) |>
   mutate(rel_score=case_when(construct=="PDsentence"~PD_avg, construct=="DOsentence"~DO_avg)) |>
   select(-c(DO_avg, PD_avg)) |> 
   left_join(select(stimuli, frequency_rank, sent_pair_id), join_by(sent_pair_id)) |>
   relocate(frequency_rank, .after=IO)
 
-part_mean_z <- exp_mod_data |>
+# Get means and diffs
+part_mean_data <- exp_mod_data |>
   group_by(sent_pair_id, construct, classification, IO, frequency_rank) |>
-  summarize(mean_z=mean(zscores)) |>
-  pivot_wider(names_from=construct, values_from=mean_z) |>
-  mutate(human_diff=DOsentence - PDsentence) |>
+  summarize(mean_z=mean(zscores), mean_scores=mean(Value)) |>
+  pivot_wider(names_from=construct, values_from=c(mean_z, mean_scores)) |>
+  mutate(
+    human_zdiff=mean_z_PDsentence - mean_z_DOsentence, 
+    human_sdiff=mean_scores_PDsentence - mean_scores_DOsentence) |>
   left_join(select(model_scores, diff_avg, sent_pair_id), join_by(sent_pair_id))
-write.csv(part_mean_z, "analysis/diff_means_data.csv")
+write.csv(part_mean_data, "analysis/diff_means_data.csv")
 
 
-ggplot(part_mean_z, aes(x=human_diff, y=diff_avg, color=classification)) +
+ggplot(part_mean_data, aes(x=human_zdiff, y=diff_avg, color=classification)) +
   geom_point() +
   geom_smooth(method=lm)
+ggplot(part_mean_data, aes(x=human_sdiff, y=diff_avg, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm)
+
+part_mean_data |>
+  group_by(classification, IO) |>
+  summarize(mean_DO=mean(mean_scores_DOsentence),
+          mean_PD=mean(mean_scores_PDsentence),
+          mean_diff=mean(human_sdiff),
+          mean_DO_z=mean(mean_z_DOsentence),
+          mean_PD_z=mean(mean_z_PDsentence),
+          mean_diff_z=mean(human_zdiff))
+
+ggplot(part_mean_data, aes(x=IO, y=human_sdiff, fill=classification)) + 
+  geom_bar(position="dodge", stat="identity")
+ggplot(part_mean_data, aes(x=human_zdiff, y=diff_avg, color=IO)) +
+  geom_point() +
+  geom_smooth(method=lm)
+
+ggplot(part_mean_data, aes(x=frequency_rank, y=human_zdiff, color=classification)) +
+  geom_point() + 
+  geom_smooth(method=lm)
+ggplot(part_mean_data, aes(x=frequency_rank, y=diff_avg, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm)
+# Could maybe fit a linear transformation from human diffs to model diffs for comparison purposes?
