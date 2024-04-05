@@ -217,7 +217,7 @@ model_scores <- model_scores |>
   mutate(
     DO_avg=mean(c_across(c(DO_score1, DO_score2, DO_score3, DO_score4, DO_score5)), na.rm=TRUE),
     PD_avg=mean(c_across(c(PD_score1, PD_score2, PD_score3, PD_score4, PD_score5)), na.rm=TRUE),
-    diff_avg=-1 * mean(c_across(c(diff1, diff2, diff3, diff4, diff5)), na.rm=TRUE)
+    diff_avg=mean(c_across(c(diff1, diff2, diff3, diff4, diff5)), na.rm=TRUE)
   )
 model_scores |>
   group_by(classification) |>
@@ -231,21 +231,26 @@ model_scores <- model_scores |>
   relocate(verb, .after=verb_id)
 
 # Add pretrained GPT scores to model_scores
-gpt2_scores <- read.csv("data_raw/wider_pairs_scored_gpt2.csv") |>
+gpt2_scores <- read.csv("data_raw/wider_pairs_scored_gpt2_minicons.csv") |>
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score_gpt2=DO_score, PD_score_gpt2=PD_score, diff_gpt2=diff, verb_id=item)
-gpt2_med_scores <- read.csv("data_raw/wider_pairs_scored_gpt2m.csv") |>
+gpt2_med_scores <- read.csv("data_raw/wider_pairs_scored_gpt2m_minicons.csv") |>
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score_gpt2_med=DO_score, PD_score_gpt2_med=PD_score, diff_gpt2_med=diff, verb_id=item)
-gpt2_large_scores <- read.csv("data_raw/wider_pairs_scored_gpt2l.csv") |>
+gpt2_large_scores <- read.csv("data_raw/wider_pairs_scored_gpt2l_minicons.csv") |>
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score_gpt2_large=DO_score, PD_score_gpt2_large=PD_score, diff_gpt2_large=diff, verb_id=item)
+gpt2_xl_scores <- read.csv("data_raw/wider_pairs_scored_gpt2xl_minicons.csv") |>
+  select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
+  mutate(sent_pair_id=row_number()) |>
+  relocate(sent_pair_id) |>
+  rename(DO_score_gpt2_xl=DO_score, PD_score_gpt2_xl=PD_score, diff_gpt2_xl=diff, verb_id=item)
 
 gpt2_scores |>
   group_by(classification) |>
@@ -264,6 +269,9 @@ model_scores <- model_scores |>
     join_by(sent_pair_id)) |>
   left_join(
     select(gpt2_large_scores, DO_score_gpt2_large, PD_score_gpt2_large, diff_gpt2_large, sent_pair_id),
+    join_by(sent_pair_id)) |>
+  left_join(
+    select(gpt2_xl_scores, DO_score_gpt2_xl, PD_score_gpt2_xl, diff_gpt2_xl, sent_pair_id),
     join_by(sent_pair_id)
   )
   
@@ -286,22 +294,27 @@ exp_mod_data <- experiment_data |>
       DO_score_gpt2_large,
       PD_score_gpt2_large,
       diff_gpt2_large,
+      DO_score_gpt2_xl,
+      PD_score_gpt2_xl,
+      diff_gpt2_xl,
       sent_pair_id), 
     join_by(sent_pair_id)) |>
   mutate(
     score_100M=case_when(construct=="PDsentence"~PD_avg, construct=="DOsentence"~DO_avg),
     score_gpt2=case_when(construct=="PDsentence"~PD_score_gpt2, construct=="DOsentence"~DO_score_gpt2),
     score_gpt2med=case_when(construct=="PDsentence"~PD_score_gpt2_med, construct=="DOsentence"~DO_score_gpt2_med),
-    score_gpt2large=case_when(construct=="PDsentence"~PD_score_gpt2_large, construct=="DOsentence"~DO_score_gpt2_large)) |>
+    score_gpt2large=case_when(construct=="PDsentence"~PD_score_gpt2_large, construct=="DOsentence"~DO_score_gpt2_large),
+    score_gpt2xl=case_when(construct=="PDsentence"~PD_score_gpt2_xl, construct=="DOsentence"~DO_score_gpt2_xl)) |>
   select(-c(DO_avg, PD_avg, DO_score_gpt2, PD_score_gpt2, DO_score_gpt2_med,
-            PD_score_gpt2_med, DO_score_gpt2_large, PD_score_gpt2_large)) |>
+            PD_score_gpt2_med, DO_score_gpt2_large, PD_score_gpt2_large, DO_score_gpt2_xl, PD_score_gpt2_xl)) |>
   left_join(select(stimuli, frequency_rank, sent_pair_id), join_by(sent_pair_id)) |>
   relocate(frequency_rank, .after=IO)
+write.csv(exp_mod_data, "analysis/part_model_data.csv")
 
 # Get means and diffs
 part_mean_data <- exp_mod_data |>
   group_by(sent_pair_id, verb_id, verb, construct, classification, IO, 
-           frequency_rank, diff_avg, diff_gpt2, diff_gpt2_med, diff_gpt2_large) |>
+           frequency_rank, diff_avg, diff_gpt2, diff_gpt2_med, diff_gpt2_large, diff_gpt2_xl) |>
   summarize(mean_z=mean(zscores), mean_scores=mean(Value)) |>
   pivot_wider(names_from=construct, values_from=c(mean_z, mean_scores)) |>
   mutate(
