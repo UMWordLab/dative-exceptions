@@ -1,4 +1,4 @@
-,Unnamed: 0,item,plural,classification,frequency_rank,recipient_id,DOsentence,PDsentence,DOscore,PDscore,diff
+,Unnamed: 0,item,plural,classification,frequency_rank,recipient_id,DOsentence,PDsentence,DO_score,PD_score,diff
 0,1,101,False,alternating,1,longIndefinite,Bob took a man wearing a hat a gift.,Bob took a gift to a man wearing a hat.,-5.347226619720459,-5.347226619720459,0.0
 1,2,101,False,alternating,1,shortIndefinite,Juan took a woman a gift.,Juan took a gift to a woman.,-6.0407633781433105,-6.0407633781433105,0.0
 2,3,103,False,alternating,3,longIndefinite,Michael gave a man wearing a hat a message.,Michael gave a message to a man wearing a hat.,-4.593755722045898,-4.593755722045898,0.0
