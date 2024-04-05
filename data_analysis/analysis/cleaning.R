@@ -139,27 +139,27 @@ experiment_data <- experiment_data |>
 
 
 # Read in model scores
-scores1 <- read.csv ("data_raw/wider_pairs_scored_100M_1.csv") |> 
+scores1 <- read.csv ("data_raw/wider_pairs_scored_100M_1_minicons.csv") |> 
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score1=DO_score, PD_score1=PD_score, diff1=diff, verb_id=item)
-scores2 <- read.csv ("data_raw/wider_pairs_scored_100M_2.csv") |> 
+scores2 <- read.csv ("data_raw/wider_pairs_scored_100M_2_minicons.csv") |> 
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score2=DO_score, PD_score2=PD_score, diff2=diff, verb_id=item)
-scores3 <- read.csv ("data_raw/wider_pairs_scored_100M_3.csv") |> 
+scores3 <- read.csv ("data_raw/wider_pairs_scored_100M_3_minicons.csv") |> 
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score3=DO_score, PD_score3=PD_score, diff3=diff, verb_id=item)
-scores4 <- read.csv ("data_raw/wider_pairs_scored_100M_4.csv") |> 
+scores4 <- read.csv ("data_raw/wider_pairs_scored_100M_4_minicons.csv") |> 
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score4=DO_score, PD_score4=PD_score, diff4=diff, verb_id=item)
-scores5 <- read.csv ("data_raw/wider_pairs_scored_100M_5.csv") |> 
+scores5 <- read.csv ("data_raw/wider_pairs_scored_100M_5_minicons.csv") |> 
   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
@@ -307,7 +307,6 @@ part_mean_data <- exp_mod_data |>
   mutate(
     human_zdiff=mean_z_PDsentence - mean_z_DOsentence, 
     human_sdiff=mean_scores_PDsentence - mean_scores_DOsentence) # |>
-  # left_join(select(model_scores, diff_avg, sent_pair_id), join_by(sent_pair_id))
 write.csv(part_mean_data, "analysis/diff_means_data.csv")
 
 
@@ -315,6 +314,15 @@ ggplot(part_mean_data, aes(x=human_zdiff, y=diff_avg, color=classification)) +
   geom_point() +
   geom_smooth(method=lm)
 ggplot(part_mean_data, aes(x=human_sdiff, y=diff_avg, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm)
+ggplot(part_mean_data, aes(x=human_sdiff, y=diff_gpt2, color=classification)) +
+  geom_point() + 
+  geom_smooth(method=lm)
+ggplot(part_mean_data, aes(x=human_sdiff, y=diff_gpt2_med, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm)
+ggplot(part_mean_data, aes(x=human_sdiff, y=diff_gpt2_large, color=classification)) +
   geom_point() +
   geom_smooth(method=lm)
 
