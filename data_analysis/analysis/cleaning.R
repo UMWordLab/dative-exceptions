@@ -246,11 +246,11 @@ gpt2_large_scores <- read.csv("data_raw/wider_pairs_scored_gpt2l_minicons.csv") 
   mutate(sent_pair_id=row_number()) |>
   relocate(sent_pair_id) |>
   rename(DO_score_gpt2_large=DO_score, PD_score_gpt2_large=PD_score, diff_gpt2_large=diff, verb_id=item)
-gpt2_xl_scores <- read.csv("data_raw/wider_pairs_scored_gpt2xl_minicons.csv") |>
-  select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
-  mutate(sent_pair_id=row_number()) |>
-  relocate(sent_pair_id) |>
-  rename(DO_score_gpt2_xl=DO_score, PD_score_gpt2_xl=PD_score, diff_gpt2_xl=diff, verb_id=item)
+# gpt2_xl_scores <- read.csv("data_raw/wider_pairs_scored_gpt2xl_minicons.csv") |>
+#   select(item, classification, frequency_rank, recipient_id, DOsentence, PDsentence, DO_score, PD_score, diff) |>
+#   mutate(sent_pair_id=row_number()) |>
+#   relocate(sent_pair_id) |>
+#   rename(DO_score_gpt2_xl=DO_score, PD_score_gpt2_xl=PD_score, diff_gpt2_xl=diff, verb_id=item)
 
 gpt2_scores |>
   group_by(classification) |>
@@ -269,11 +269,11 @@ model_scores <- model_scores |>
     join_by(sent_pair_id)) |>
   left_join(
     select(gpt2_large_scores, DO_score_gpt2_large, PD_score_gpt2_large, diff_gpt2_large, sent_pair_id),
-    join_by(sent_pair_id)) |>
-  left_join(
-    select(gpt2_xl_scores, DO_score_gpt2_xl, PD_score_gpt2_xl, diff_gpt2_xl, sent_pair_id),
-    join_by(sent_pair_id)
-  )
+    join_by(sent_pair_id)) # |>
+  # left_join(
+  #   select(gpt2_xl_scores, DO_score_gpt2_xl, PD_score_gpt2_xl, diff_gpt2_xl, sent_pair_id),
+  #   join_by(sent_pair_id)
+  # )
   
 write.csv(model_scores, "analysis/cleaned_model_data.csv")
 
@@ -308,7 +308,8 @@ exp_mod_data <- experiment_data |>
   select(-c(DO_avg, PD_avg, DO_score_gpt2, PD_score_gpt2, DO_score_gpt2_med,
             PD_score_gpt2_med, DO_score_gpt2_large, PD_score_gpt2_large, DO_score_gpt2_xl, PD_score_gpt2_xl)) |>
   left_join(select(stimuli, frequency_rank, sent_pair_id), join_by(sent_pair_id)) |>
-  relocate(frequency_rank, .after=IO)
+  relocate(frequency_rank, .after=IO) |>
+  mutate(sent_pair_id=as_factor(sent_pair_id))
 write.csv(exp_mod_data, "analysis/part_model_data.csv")
 
 # Get means and diffs
@@ -360,19 +361,88 @@ ggplot(part_mean_data, aes(x=frequency_rank, y=human_zdiff, color=classification
 ggplot(part_mean_data, aes(x=frequency_rank, y=diff_avg, color=classification)) +
   geom_point() +
   geom_smooth(method=lm)
-# Could maybe fit a linear transformation from human diffs to model diffs for comparison purposes?
+
+
+# Linear Modeling and Summary Graphs --------------------------------------
+
 
 # group by verb 
 # use facet_wrap(vars(variable-to-split-by))
-temp <- exp_mod_data |>
-  mutate(sent_pair_id=as_factor(sent_pair_id))
+
 library(lme4)
 library(lmerTest)
 
-stats1 <- lm(Value~classification*construct, data=temp)
+exp_mod_facet <- part_mean_data |>
+  select(sent_pair_id, verb_id, verb, classification, 
+         IO, frequency_rank, diff_avg, diff_gpt2, diff_gpt2_med, 
+         diff_gpt2_large, human_zdiff, human_sdiff) |>
+  rename(GPT2_100M = diff_avg, GPT2_small = diff_gpt2, GPT2_med = diff_gpt2_med, GPT2_large = diff_gpt2_large) |>
+  pivot_longer(cols=c(GPT2_100M, GPT2_small, GPT2_med, GPT2_large), names_to='model', values_to='diff')
+  
+
+
+# summary model vs. human diffs coded by classification
+ggplot(transform(
+  exp_mod_facet, 
+  model=factor(model, levels=c("GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
+  aes(x=human_zdiff, y=diff)) +
+  geom_point(aes(color=classification)) +
+  geom_smooth(method=lm) +
+  labs(title = "Model vs. Human Judgments by Sentence Classification",
+       y = "Model Diff", x = "Human Diff") +
+  facet_wrap(~model)
+# same coded by IO, unnecessary
+ggplot(transform(
+  exp_mod_facet, 
+  model=factor(model, levels=c("GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
+  aes(x=human_zdiff, y=diff)) +
+  geom_point(aes(color=IO)) +
+  geom_smooth(method=lm) +
+  labs(title = "Human vs. Model Judgments by Sentence Classification",
+       y = "Model Diff", x = "Human Diff") +
+  facet_wrap(~model)
+
+# ggplot(part_mean_data, aes(x=frequency_rank, y=human_zdiff, color=IO)) +
+#   geom_point() +
+#   geom_smooth(method=lm)
+
+
+combined_facet <- part_mean_data |>
+  select(sent_pair_id, verb_id, verb, classification, 
+         IO, frequency_rank, diff_avg, diff_gpt2, diff_gpt2_med, 
+         diff_gpt2_large, human_zdiff, human_sdiff) |>
+  rename(
+    Human = human_zdiff, 
+    GPT2_100M = diff_avg, 
+    GPT2_small = diff_gpt2, 
+    GPT2_med = diff_gpt2_med, 
+    GPT2_large = diff_gpt2_large) |>
+  mutate(IO = recode(IO, longIndefinite = 'Long', shortIndefinite = 'Short')) |>
+  pivot_longer(cols=c(Human, GPT2_100M, GPT2_small, GPT2_med, GPT2_large), names_to='source', values_to='diff')
+ggplot(transform(
+  combined_facet, 
+  model=factor(source, levels=c("Human", "GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
+  aes(x=-1 * frequency_rank, y=diff, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm) +
+  labs(title = "Diffs vs. Verb Frequency by Sentence Classification",
+       y = "Diff", x = "Frequency") +
+  facet_wrap(~source, nrow=1, scales="free_y")
+
+# Diffs ranges by IO
+ggplot(combined_facet, aes(x=IO, y=diff, fill=classification)) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~source, nrow=1)
+# Boxplot ver.
+ggplot(combined_facet, aes(x=IO, y=diff, fill=classification)) + 
+  geom_boxplot() +
+  facet_wrap(~source, nrow=1)
+
+
+stats1 <- lm(Value~classification*construct, data=exp_mod_data)
 summary(stats1)
 
-stats2 <- lmer(Value~classification*construct + frequency_rank + (1+classification*construct|partid) + (1+construct|sent_pair_id), data=temp)
+stats2 <- lmer(Value~classification*construct + frequency_rank + (1+classification*construct|partid) + (1+construct|sent_pair_id), data=exp_mod_data)
 summary(stats2)
 
 # saving: ggsave
