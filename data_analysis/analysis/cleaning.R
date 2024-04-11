@@ -542,12 +542,6 @@ summary(sm3)$coeff
 sm4 <- lmer(score_gpt2large~classification * construct + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
 summary(sm4)$coeff
 
-
-d1 <- lmer(human_sdiff~classification + (1|verb_id), data=part_mean_data)
-summary(d1)
-dm1 <- lmer(diff_avg~classification + (1|verb_id), data=part_mean_data)
-summary(dm1)
-
 ggplot(filter(exp_mod_data, classification=="alternating", zscores > 0), aes(x=-1 * frequency_rank)) +
   geom_histogram()
   # geom_errorbar(aes(ymin = low, ymax = up))
@@ -556,7 +550,7 @@ ggplot(filter(exp_mod_data, classification=="alternating", diff_avg > mean(diff_
 
 
 # Frequency
-# Values
+# Values: used
 f1 <- lmer(Value~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id) + (1|partid), data=exp_mod_data)
 summary(f1)
 fm1 <- lmer(score_100M~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
@@ -572,6 +566,3 @@ g1 <- lmer(human_sdiff~classification + frequency_rank + (1|verb_id), data=part_
 summary(g1)
 gm1 <- lmer(diff_avg~classification + frequency_rank + (1|verb_id), data=part_mean_data)
 summary(gm1)
-# saving: ggsave
-# assign plots to object, save
-# can set dimensions, etc., in ggsave
