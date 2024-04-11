@@ -368,7 +368,7 @@ ggplot(part_mean_data, aes(x=frequency_rank, y=diff_avg, color=classification)) 
 
 # group by verb 
 # use facet_wrap(vars(variable-to-split-by))
-
+library(ggplot2)
 library(lme4)
 library(lmerTest)
 
@@ -378,14 +378,38 @@ exp_mod_facet <- part_mean_data |>
          diff_gpt2_large, human_zdiff, human_sdiff) |>
   rename(GPT2_100M = diff_avg, GPT2_small = diff_gpt2, GPT2_med = diff_gpt2_med, GPT2_large = diff_gpt2_large) |>
   pivot_longer(cols=c(GPT2_100M, GPT2_small, GPT2_med, GPT2_large), names_to='model', values_to='diff')
-  
 
+# Used: Participant z-scores graphs
+ggplot(exp_mod_data, aes(x=classification, y=zscores, fill=construct)) + 
+  geom_boxplot() +
+  labs(title = "Participant Z-scores", x = "Classification")
+model_scores <- model_scores |>
+  select(-c(DO_score_gpt2_xl, PD_score_gpt2_xl, diff_gpt2_xl))
+model_rot <- model_scores |>
+  rename(GPT2_100M = DO_avg, GPT2_small = DO_score_gpt2, GPT2_med = DO_score_gpt2_med, GPT2_large = DO_score_gpt2_large) |>
+  pivot_longer(cols=c(GPT2_100M, GPT2_small, GPT2_med, GPT2_large), names_to='DO', values_to='DOscores') |>
+  rename(GPT2_100M = PD_avg, GPT2_small = PD_score_gpt2, GPT2_med = PD_score_gpt2_med, GPT2_large = PD_score_gpt2_large) |>
+  pivot_longer(cols=c(GPT2_100M, GPT2_small, GPT2_med, GPT2_large), names_to='PD', values_to='PDscores') |>
+  select(sent_pair_id, verb_id, verb, classification, frequency_rank, recipient_id, DO, DOscores, PD, PDscores) |>
+  filter(DO == PD) |>
+  rename(model=DO, DOsentence=DOscores, PDsentence=PDscores) |>
+  select(-c(PD)) |>
+  pivot_longer(cols=c(DOsentence, PDsentence), names_to="construct", values_to="scores")
 
-# summary model vs. human diffs coded by classification
+# Used: Model scores graphs
+ggplot(transform(
+  model_rot, 
+  model=factor(model, levels=c("GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
+  aes(x=classification, y=scores, fill=construct)) + 
+  geom_boxplot() +
+  labs(x = "Classification") +
+  facet_wrap(~model, nrow=1)
+
+# Used: summary model vs. human diffs coded by classification
 ggplot(transform(
   exp_mod_facet, 
   model=factor(model, levels=c("GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
-  aes(x=human_zdiff, y=diff)) +
+  aes(x=human_sdiff, y=diff)) +
   geom_point(aes(color=classification)) +
   geom_smooth(method=lm) +
   labs(title = "Model vs. Human Judgments by Sentence Classification",
@@ -419,9 +443,10 @@ combined_facet <- part_mean_data |>
     GPT2_large = diff_gpt2_large) |>
   mutate(IO = recode(IO, longIndefinite = 'Long', shortIndefinite = 'Short')) |>
   pivot_longer(cols=c(Human, GPT2_100M, GPT2_small, GPT2_med, GPT2_large), names_to='source', values_to='diff')
+# Used: general frequency plot
 ggplot(transform(
   combined_facet, 
-  model=factor(source, levels=c("Human", "GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
+  source=factor(source, levels=c("Human", "GPT2_100M","GPT2_small", "GPT2_med", "GPT2_large"))), 
   aes(x=-1 * frequency_rank, y=diff, color=classification)) +
   geom_point() +
   geom_smooth(method=lm) +
@@ -429,22 +454,124 @@ ggplot(transform(
        y = "Diff", x = "Frequency") +
   facet_wrap(~source, nrow=1, scales="free_y")
 
+freq_models <- ggplot(transform(
+  exp_mod_facet,
+  model=factor(model, levels=c("GPT2_100M", "GPT2_small", "GPT2_med", "GPT2_large"))),
+  aes(x=-1 * frequency_rank, y=diff, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm) +
+  labs(y = "Diff", x = "Negative Relative Frequency Rank") +
+  theme(legend.position = "none") +
+  facet_wrap(~model, nrow=1)
+
+freq_humans <- ggplot(exp_mod_facet, aes(x=-1 * frequency_rank, y = human_sdiff, color=classification)) +
+  geom_point() +
+  geom_smooth(method=lm) +
+  labs(y = "", x = "", title="Human")
+
+library(ggpubr)
+
+freq_plot <- ggarrange(
+  freq_models, freq_humans,
+  widths = c(2.2, 1)
+  )
+annotate_figure(freq_plot, top = text_grob(
+  "Diffs vs. Relative Frequency by Classification",
+  face = "bold",
+  size = 14))
+
+
 # Diffs ranges by IO
 ggplot(combined_facet, aes(x=IO, y=diff, fill=classification)) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~source, nrow=1)
-# Boxplot ver.
+# Used: Boxplot ver.(deprecate see below)
 ggplot(combined_facet, aes(x=IO, y=diff, fill=classification)) + 
   geom_boxplot() +
+  labs(title = "Diffs by Sentence Length", x = "Sentence Length") +
   facet_wrap(~source, nrow=1)
 
 
+len_models <- ggplot(transform(
+  exp_mod_facet,
+  model=factor(model, levels=c("GPT2_100M", "GPT2_small", "GPT2_med", "GPT2_large"))),
+  aes(x=IO, y=diff, color=classification)) +
+  geom_boxplot() +
+  geom_smooth(method=lm) +
+  labs(x = "Sentence Length") +
+  theme(legend.position = "none") +
+  facet_wrap(~model, nrow=1)
+len_humans <- ggplot(exp_mod_facet, aes(x=IO, y = human_sdiff, color=classification)) +
+  geom_boxplot() +
+  geom_smooth(method=lm) +
+  labs(y = "", x = "", title="Human")
+len_plot <- ggarrange(
+  len_models, len_humans,
+  widths = c(2.2, 1)
+)
+annotate_figure(len_plot, top = text_grob(
+  "Diffs vs. Sentence Length by Classification",
+  face = "bold",
+  size = 14))
+
+# Correlation between classification and participant-assigned values
 stats1 <- lm(Value~classification*construct, data=exp_mod_data)
 summary(stats1)
 
 stats2 <- lmer(Value~classification*construct + frequency_rank + (1+classification*construct|partid) + (1+construct|sent_pair_id), data=exp_mod_data)
 summary(stats2)
 
+# Model vs. participant diffs: correlation coefficient
+m100m <- lm(diff_avg~human_sdiff, data=part_mean_data)
+summary(m100m)
+msmall <- lm(diff_gpt2~human_sdiff, data=part_mean_data)
+summary(msmall)
+mmed <- lm(diff_gpt2_med~human_sdiff, data=part_mean_data)
+summary(mmed)
+mlarge <- lm(diff_gpt2_large~human_sdiff, data=part_mean_data)
+summary(mlarge)
+
+s1 <- lmer(Value~classification * construct + (1|partid) + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(s1)
+sm1 <- lmer(score_100M~classification * construct + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(sm1)$coeff
+sm2 <- lmer(score_gpt2~classification * construct + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(sm2)$coeff
+sm3 <- lmer(score_gpt2med~classification * construct + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(sm3)$coeff
+sm4 <- lmer(score_gpt2large~classification * construct + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(sm4)$coeff
+
+
+d1 <- lmer(human_sdiff~classification + (1|verb_id), data=part_mean_data)
+summary(d1)
+dm1 <- lmer(diff_avg~classification + (1|verb_id), data=part_mean_data)
+summary(dm1)
+
+ggplot(filter(exp_mod_data, classification=="alternating", zscores > 0), aes(x=-1 * frequency_rank)) +
+  geom_histogram()
+  # geom_errorbar(aes(ymin = low, ymax = up))
+ggplot(filter(exp_mod_data, classification=="alternating", diff_avg > mean(diff_avg)), aes(x=-1 * frequency_rank)) +
+  geom_histogram()
+
+
+# Frequency
+# Values
+f1 <- lmer(Value~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id) + (1|partid), data=exp_mod_data)
+summary(f1)
+fm1 <- lmer(score_100M~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(fm1)
+fm2 <- lmer(score_gpt2~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(fm2)
+fm3 <- lmer(score_gpt2med~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(fm3)
+fm4 <- lmer(score_gpt2large~classification * construct + frequency_rank + (1|sent_pair_id) + (1|verb_id), data=exp_mod_data)
+summary(fm4)
+
+g1 <- lmer(human_sdiff~classification + frequency_rank + (1|verb_id), data=part_mean_data)
+summary(g1)
+gm1 <- lmer(diff_avg~classification + frequency_rank + (1|verb_id), data=part_mean_data)
+summary(gm1)
 # saving: ggsave
 # assign plots to object, save
 # can set dimensions, etc., in ggsave
